@@ -47,17 +47,17 @@
 		5A690FA42112EFF200353AF0 /* EasyStyleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyStyleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A690FA82112EFF200353AF0 /* EasyStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyStyleTests.swift; sourceTree = "<group>"; };
 		5A690FAA2112EFF200353AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A690FB72112FAB100353AF0 /* EasyStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyStyle.swift; path = ../../Source/EasyStyle.swift; sourceTree = "<group>"; };
-		5A690FBA2112FAD000353AF0 /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonStyle.swift; path = ../../../Source/ButtonStyle/ButtonStyle.swift; sourceTree = "<group>"; };
-		5A690FBD2112FAE800353AF0 /* CollectionViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewStyle.swift; path = ../../../Source/CollectionViewStyle/CollectionViewStyle.swift; sourceTree = "<group>"; };
-		5A690FC02112FB0900353AF0 /* ImageViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewStyle.swift; path = ../../../Source/ImageViewStyle/ImageViewStyle.swift; sourceTree = "<group>"; };
-		5A690FC32112FB2100353AF0 /* LabelStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LabelStyle.swift; path = ../../../Source/LabelStyle/LabelStyle.swift; sourceTree = "<group>"; };
-		5A690FC62112FB4100353AF0 /* ScrollViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewStyle.swift; path = ../../../Source/ScrollViewStyle/ScrollViewStyle.swift; sourceTree = "<group>"; };
-		5A690FC92112FB6000353AF0 /* TableViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewStyle.swift; path = ../../../Source/TableViewStyle/TableViewStyle.swift; sourceTree = "<group>"; };
-		5A690FCC2112FB9800353AF0 /* TextFieldStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldStyle.swift; path = ../../../Source/TextFieldStyle/TextFieldStyle.swift; sourceTree = "<group>"; };
-		5A690FCF2112FBC500353AF0 /* TextViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextViewStyle.swift; path = ../../../Source/TextViewStyle/TextViewStyle.swift; sourceTree = "<group>"; };
-		5A690FD22112FBE600353AF0 /* ControlStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlStyle.swift; path = ../../../Source/UIControl/ControlStyle.swift; sourceTree = "<group>"; };
-		5A690FD52112FC0300353AF0 /* ViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewStyle.swift; path = ../../../Source/ViewStyle/ViewStyle.swift; sourceTree = "<group>"; };
+		5A690FB72112FAB100353AF0 /* EasyStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyStyle.swift; path = ../Source/EasyStyle.swift; sourceTree = SOURCE_ROOT; };
+		5A690FBA2112FAD000353AF0 /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		5A690FBD2112FAE800353AF0 /* CollectionViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewStyle.swift; sourceTree = "<group>"; };
+		5A690FC02112FB0900353AF0 /* ImageViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewStyle.swift; sourceTree = "<group>"; };
+		5A690FC32112FB2100353AF0 /* LabelStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelStyle.swift; sourceTree = "<group>"; };
+		5A690FC62112FB4100353AF0 /* ScrollViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewStyle.swift; sourceTree = "<group>"; };
+		5A690FC92112FB6000353AF0 /* TableViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewStyle.swift; sourceTree = "<group>"; };
+		5A690FCC2112FB9800353AF0 /* TextFieldStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldStyle.swift; sourceTree = "<group>"; };
+		5A690FCF2112FBC500353AF0 /* TextViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewStyle.swift; sourceTree = "<group>"; };
+		5A690FD22112FBE600353AF0 /* ControlStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlStyle.swift; sourceTree = "<group>"; };
+		5A690FD52112FC0300353AF0 /* ViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +134,8 @@
 				5A690FD42112FBF300353AF0 /* ViewStyle */,
 				5A690FB72112FAB100353AF0 /* EasyStyle.swift */,
 			);
-			path = Source;
+			name = Source;
+			path = ../Source;
 			sourceTree = "<group>";
 		};
 		5A690FB92112FAC300353AF0 /* ButtonStyle */ = {
