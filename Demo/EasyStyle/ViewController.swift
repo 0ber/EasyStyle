@@ -57,8 +57,8 @@ extension ButtonStyle {
     private static let blueButton = roundH1 + titleColor(#colorLiteral(red: 0.1882352941, green: 0.662745098, blue: 0.8705882353, alpha: 1), .normal) + borderColor(#colorLiteral(red: 0.1882352941, green: 0.662745098, blue: 0.8705882353, alpha: 1))
     
     // create style
-    static let logIn = ButtonStyle.create <<< blueButton + title("Log In", .normal)
-    static let logOut = ButtonStyle.create <<< redButton + title("Log Out", .normal)
+    static let logIn = ButtonStyle.create <<< blueButton + title("Login", .normal)
+    static let logOut = ButtonStyle.create <<< redButton + title("Logout", .normal)
 }
 
 // MARK: Label Style

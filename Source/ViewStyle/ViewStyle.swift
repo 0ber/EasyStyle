@@ -8,6 +8,19 @@ extension UIView {
 
 public protocol ViewStyleCompatability  { }
 
+public struct ViewStyle: StyleProtocol, ViewStyleCompatability {
+    
+    public typealias ViewType = UIView
+    
+    public let style: Style
+    
+    public init(style: @escaping Style) {
+        self.style = style
+    }
+    
+    public static var create: ViewStyle { return ViewStyle(style: { $0 }) }
+}
+
 extension ViewStyleCompatability where Self: StyleProtocol, Self.ViewType: UIView {
     
     // MARK: UIView methods
@@ -158,18 +171,4 @@ extension ViewStyleCompatability where Self: StyleProtocol, Self.ViewType: UIVie
             return view
         }
     }
-}
-
-
-public struct ViewStyle: StyleProtocol, ViewStyleCompatability {
-    
-    public typealias ViewType = UIView
-    
-    public let style: Style
-    
-    public init(style: @escaping Style) {
-        self.style = style
-    }
-    
-    public static var create: ViewStyle { return ViewStyle(style: { $0 }) }
 }

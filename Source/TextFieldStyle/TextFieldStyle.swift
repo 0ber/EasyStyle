@@ -6,7 +6,7 @@ extension UITextField {
     }
 }
 
-public struct TextFieldStyle: StyleProtocol, ViewStyleCompatability {
+public struct TextFieldStyle: StyleProtocol, ControlStyleCompatability, ViewStyleCompatability {
     
     public typealias ViewType = UITextField
     
@@ -184,42 +184,6 @@ public struct TextFieldStyle: StyleProtocol, ViewStyleCompatability {
         return { textField in
             textField.inputAccessoryView = value
             return textField
-        }
-    }
-    
-    // MARK: UIControl
-    public static func isEnabled(_ value: Bool) -> Style {
-        return { contol in
-            contol.isEnabled = value
-            return contol
-        }
-    }
-    
-    public static func isSelected(_ value: Bool) -> Style {
-        return { contol in
-            contol.isSelected = value
-            return contol
-        }
-    }
-    
-    public static func isHighlighted(_ value: Bool) -> Style {
-        return { contol in
-            contol.isHighlighted = value
-            return contol
-        }
-    }
-    
-    public static func contentVerticalAlignment(_ value: UIControlContentVerticalAlignment) -> Style {
-        return { contol in
-            contol.contentVerticalAlignment = value
-            return contol
-        }
-    }
-    
-    public static func contentHorizontalAlignment(_ value: UIControlContentHorizontalAlignment) -> Style {
-        return { contol in
-            contol.contentHorizontalAlignment = value
-            return contol
         }
     }
 }

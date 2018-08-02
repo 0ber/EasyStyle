@@ -6,7 +6,10 @@ extension UIScrollView {
     }
 }
 
-public struct ScrollViewStyle: StyleProtocol, ViewStyleCompatability {
+public protocol ScrollViewStyleCompatability  { }
+
+
+public struct ScrollViewStyle: StyleProtocol, ViewStyleCompatability, ScrollViewStyleCompatability {
     
     public typealias ViewType = UIScrollView
     
@@ -17,7 +20,10 @@ public struct ScrollViewStyle: StyleProtocol, ViewStyleCompatability {
     }
     
     public static var create: ScrollViewStyle { return ScrollViewStyle(style: { $0 }) }
-    
+}
+
+extension ScrollViewStyleCompatability where Self: StyleProtocol, Self.ViewType: UIScrollView {
+
     // MARK: UIScrollView
     
     public static func contentSize(_ value: CGSize) -> Style {

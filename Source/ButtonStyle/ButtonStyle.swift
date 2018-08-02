@@ -6,7 +6,7 @@ extension UIButton {
     }
 }
 
-public struct ButtonStyle: StyleProtocol, ViewStyleCompatability {
+public struct ButtonStyle: StyleProtocol, ControlStyleCompatability, ViewStyleCompatability {
     public typealias ViewType = UIButton
     
     public let style: Style
@@ -113,42 +113,6 @@ public struct ButtonStyle: StyleProtocol, ViewStyleCompatability {
         return { button in
             button.imageEdgeInsets = value
             return button
-        }
-    }
-    
-    // MARK: UIControl
-    public static func isEnabled(_ value: Bool) -> Style {
-        return { label in
-            label.isEnabled = value
-            return label
-        }
-    }
-    
-    public static func isSelected(_ value: Bool) -> Style {
-        return { label in
-            label.isSelected = value
-            return label
-        }
-    }
-    
-    public static func isHighlighted(_ value: Bool) -> Style {
-        return { label in
-            label.isHighlighted = value
-            return label
-        }
-    }
-    
-    public static func contentVerticalAlignment(_ value: UIControlContentVerticalAlignment) -> Style {
-        return { label in
-            label.contentVerticalAlignment = value
-            return label
-        }
-    }
-    
-    public static func contentHorizontalAlignment(_ value: UIControlContentHorizontalAlignment) -> Style {
-        return { label in
-            label.contentHorizontalAlignment = value
-            return label
         }
     }
     

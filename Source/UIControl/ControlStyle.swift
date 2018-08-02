@@ -6,7 +6,9 @@ extension UIControl {
     }
 }
 
-public struct ControlStyle: StyleProtocol, ViewStyleCompatability {
+public protocol ControlStyleCompatability  { }
+
+public struct ControlStyle: StyleProtocol, ControlStyleCompatability, ViewStyleCompatability {
     
     public typealias ViewType = UIControl
     
@@ -17,6 +19,9 @@ public struct ControlStyle: StyleProtocol, ViewStyleCompatability {
     }
     
     public static var create: ControlStyle { return ControlStyle(style: { $0 }) }
+}
+    
+extension ControlStyleCompatability where Self: StyleProtocol, Self.ViewType: UIControl {
     
     // MARK: UIControl
     public static func isEnabled(_ value: Bool) -> Style {
