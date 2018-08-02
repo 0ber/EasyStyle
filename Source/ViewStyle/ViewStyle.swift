@@ -6,17 +6,9 @@ extension UIView {
     }
 }
 
-public struct ViewStyle: StyleProtocol {
-    
-    public typealias ViewType = UIView
-    
-    public let style: Style
-    
-    public init(style: @escaping Style) {
-        self.style = style
-    }
-    
-    public static var create: ViewStyle { return ViewStyle(style: { $0 }) }
+public protocol ViewStyleCompatability  { }
+
+extension ViewStyleCompatability where Self: StyleProtocol, Self.ViewType: UIView {
     
     // MARK: UIView methods
     public static func backgroundColor(_ value: UIColor) -> Style {
@@ -166,4 +158,18 @@ public struct ViewStyle: StyleProtocol {
             return view
         }
     }
+}
+
+
+public struct ViewStyle: StyleProtocol, ViewStyleCompatability {
+    
+    public typealias ViewType = UIView
+    
+    public let style: Style
+    
+    public init(style: @escaping Style) {
+        self.style = style
+    }
+    
+    public static var create: ViewStyle { return ViewStyle(style: { $0 }) }
 }
