@@ -1,1 +1,1 @@
-<img src="EasyStyleIcon.png" width="178" height="81"></a>
+<p align="center"><img src="EasyStyleIcon.png" width="398" height="143"></a>
