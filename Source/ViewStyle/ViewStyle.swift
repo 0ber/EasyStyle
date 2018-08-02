@@ -116,6 +116,7 @@ extension ViewStyleCompatability where Self: StyleProtocol, Self.ViewType: UIVie
         }
     }
     
+    @available(iOS 11.0, *)
     public static func maskedCorners(_ value: CACornerMask) -> Style {
         return { view in
             view.layer.maskedCorners = value

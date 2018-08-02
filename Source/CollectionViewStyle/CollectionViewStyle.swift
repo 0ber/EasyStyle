@@ -34,6 +34,7 @@ public struct CollectionViewStyle: StyleProtocol, ViewStyleCompatability, Scroll
         }
     }
     
+    @available(iOS 11.0, *)
     public static func dragInteractionEnabled(_ value: Bool) -> Style {
         return { collectionView in
             collectionView.dragInteractionEnabled = value

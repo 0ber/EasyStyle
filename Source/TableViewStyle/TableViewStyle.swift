@@ -61,6 +61,7 @@ public struct TableViewStyle: StyleProtocol, ViewStyleCompatability, ScrollViewS
         }
     }
     
+    @available(iOS 11.0, *)
     public static func separatorInsetReference(_ value: UITableViewSeparatorInsetReference) -> Style {
         return { tableView in
             tableView.separatorInsetReference = value
@@ -152,6 +153,7 @@ public struct TableViewStyle: StyleProtocol, ViewStyleCompatability, ScrollViewS
         }
     }
     
+    @available(iOS 11.0, *)
     public static func insetsContentViewsToSafeArea(_ value: Bool) -> Style {
         return { tableView in
             tableView.insetsContentViewsToSafeArea = value

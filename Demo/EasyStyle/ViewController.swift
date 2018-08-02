@@ -39,7 +39,11 @@ class ViewController: UIViewController {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 30).isActive = true
         titleLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -30).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        if #available(iOS 11.0, *) {
+            titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        } else {
+            titleLabel.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        }
         titleLabel.bottomAnchor.constraint(equalTo: stack.topAnchor).isActive = true
         
     }

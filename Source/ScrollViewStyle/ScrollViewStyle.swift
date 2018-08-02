@@ -47,6 +47,7 @@ extension ScrollViewStyleCompatability where Self: StyleProtocol, Self.ViewType:
         }
     }
     
+    @available(iOS 11.0, *)
     public static func contentInsetAdjustmentBehavior(_ value: UIScrollViewContentInsetAdjustmentBehavior) -> Style {
         return { scrollView in
             scrollView.contentInsetAdjustmentBehavior = value
