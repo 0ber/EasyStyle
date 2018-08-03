@@ -69,7 +69,7 @@ extension LabelStyle {
     
     // style components
     private static let h1 = font(.systemFont(ofSize: 28))
-    private static let title = h1 + textColor(#colorLiteral(red: 0.4235294118, green: 0.2862745098, blue: 0.7215686275, alpha: 1)) + aligment(.center)
+    private static let title = h1 + textColor(#colorLiteral(red: 0.4235294118, green: 0.2862745098, blue: 0.7215686275, alpha: 1)) + textAligment(.center)
 
     // create style
     static let easyStyle = LabelStyle.create <<< title + text("Easy Style")

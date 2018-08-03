@@ -47,7 +47,7 @@ public struct LabelStyle: StyleProtocol, ViewStyleCompatability {
         }
     }
     
-    public static func aligment(_ value: NSTextAlignment) -> Style {
+    public static func textAligment(_ value: NSTextAlignment) -> Style {
         return { label in
             label.textAlignment = value
             return label

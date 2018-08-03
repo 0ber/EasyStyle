@@ -45,6 +45,7 @@
 		5A3E523221147B78005C21B7 /* TextFieldStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E523121147B78005C21B7 /* TextFieldStyleTests.swift */; };
 		5A3E523421148904005C21B7 /* TableViewStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E523321148904005C21B7 /* TableViewStyleTests.swift */; };
 		5A3E523621148F61005C21B7 /* ScrollViewStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E523521148F61005C21B7 /* ScrollViewStyleTests.swift */; };
+		5A3E5238211499D3005C21B7 /* LabelStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E5237211499D3005C21B7 /* LabelStyleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 		5A3E523121147B78005C21B7 /* TextFieldStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyleTests.swift; sourceTree = "<group>"; };
 		5A3E523321148904005C21B7 /* TableViewStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewStyleTests.swift; sourceTree = "<group>"; };
 		5A3E523521148F61005C21B7 /* ScrollViewStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewStyleTests.swift; sourceTree = "<group>"; };
+		5A3E5237211499D3005C21B7 /* LabelStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				5A3E523121147B78005C21B7 /* TextFieldStyleTests.swift */,
 				5A3E523321148904005C21B7 /* TableViewStyleTests.swift */,
 				5A3E523521148F61005C21B7 /* ScrollViewStyleTests.swift */,
+				5A3E5237211499D3005C21B7 /* LabelStyleTests.swift */,
 			);
 			path = DemoTests;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 				5A3E522C211455E0005C21B7 /* ViewStyleTests.swift in Sources */,
 				5A3E523221147B78005C21B7 /* TextFieldStyleTests.swift in Sources */,
 				5A3E523021147195005C21B7 /* TextViewStyleTests.swift in Sources */,
+				5A3E5238211499D3005C21B7 /* LabelStyleTests.swift in Sources */,
 				5A3E522E21146D9F005C21B7 /* ControlStyleTests.swift in Sources */,
 				5A3E523421148904005C21B7 /* TableViewStyleTests.swift in Sources */,
 				5A3E523621148F61005C21B7 /* ScrollViewStyleTests.swift in Sources */,
