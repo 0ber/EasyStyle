@@ -29,6 +29,17 @@
 		5A3E5213211453D2005C21B7 /* EasyStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A3E5203211453D2005C21B7 /* EasyStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A3E5216211453D2005C21B7 /* EasyStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3E5201211453D2005C21B7 /* EasyStyle.framework */; };
 		5A3E5217211453D2005C21B7 /* EasyStyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3E5201211453D2005C21B7 /* EasyStyle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A3E521F211454A1005C21B7 /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51FA2114535D005C21B7 /* ViewStyle.swift */; };
+		5A3E5220211454A5005C21B7 /* ControlStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51F72114533C005C21B7 /* ControlStyle.swift */; };
+		5A3E5221211454A9005C21B7 /* TextViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51F421145311005C21B7 /* TextViewStyle.swift */; };
+		5A3E5222211454AC005C21B7 /* TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51F1211452E7005C21B7 /* TextFieldStyle.swift */; };
+		5A3E5223211454B0005C21B7 /* TableViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51EE211452C4005C21B7 /* TableViewStyle.swift */; };
+		5A3E5224211454B3005C21B7 /* ScrollViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51EB2114529B005C21B7 /* ScrollViewStyle.swift */; };
+		5A3E5225211454B6005C21B7 /* LabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51E82114527D005C21B7 /* LabelStyle.swift */; };
+		5A3E5226211454B8005C21B7 /* ImageViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51E5211451E8005C21B7 /* ImageViewStyle.swift */; };
+		5A3E5227211454BB005C21B7 /* CollectionViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51E2211451B3005C21B7 /* CollectionViewStyle.swift */; };
+		5A3E5228211454BF005C21B7 /* EasyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51CC211450D0005C21B7 /* EasyStyle.swift */; };
+		5A3E5229211454C3005C21B7 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51DF2114518D005C21B7 /* ButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -505,6 +516,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3E521F211454A1005C21B7 /* ViewStyle.swift in Sources */,
+				5A3E5228211454BF005C21B7 /* EasyStyle.swift in Sources */,
+				5A3E5224211454B3005C21B7 /* ScrollViewStyle.swift in Sources */,
+				5A3E5225211454B6005C21B7 /* LabelStyle.swift in Sources */,
+				5A3E5223211454B0005C21B7 /* TableViewStyle.swift in Sources */,
+				5A3E5222211454AC005C21B7 /* TextFieldStyle.swift in Sources */,
+				5A3E5227211454BB005C21B7 /* CollectionViewStyle.swift in Sources */,
+				5A3E5221211454A9005C21B7 /* TextViewStyle.swift in Sources */,
+				5A3E5226211454B8005C21B7 /* ImageViewStyle.swift in Sources */,
+				5A3E5229211454C3005C21B7 /* ButtonStyle.swift in Sources */,
+				5A3E5220211454A5005C21B7 /* ControlStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +700,7 @@
 		5A3E51C221145082005C21B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Demo/Info.plist;
@@ -695,6 +718,7 @@
 		5A3E51C321145082005C21B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Demo/Info.plist;
