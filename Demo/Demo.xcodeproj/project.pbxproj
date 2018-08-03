@@ -12,7 +12,6 @@
 		5A3E51AD21145081005C21B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3E51AB21145081005C21B7 /* Main.storyboard */; };
 		5A3E51AF21145082005C21B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3E51AE21145082005C21B7 /* Assets.xcassets */; };
 		5A3E51B221145082005C21B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3E51B021145082005C21B7 /* LaunchScreen.storyboard */; };
-		5A3E51BD21145082005C21B7 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51BC21145082005C21B7 /* DemoTests.swift */; };
 		5A3E51D7211450D0005C21B7 /* EasyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51CC211450D0005C21B7 /* EasyStyle.swift */; };
 		5A3E51E02114518D005C21B7 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51DF2114518D005C21B7 /* ButtonStyle.swift */; };
 		5A3E51E3211451B3005C21B7 /* CollectionViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51E2211451B3005C21B7 /* CollectionViewStyle.swift */; };
@@ -40,6 +39,7 @@
 		5A3E5227211454BB005C21B7 /* CollectionViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51E2211451B3005C21B7 /* CollectionViewStyle.swift */; };
 		5A3E5228211454BF005C21B7 /* EasyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51CC211450D0005C21B7 /* EasyStyle.swift */; };
 		5A3E5229211454C3005C21B7 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E51DF2114518D005C21B7 /* ButtonStyle.swift */; };
+		5A3E522C211455E0005C21B7 /* ViewStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E522B211455E0005C21B7 /* ViewStyleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +96,6 @@
 		5A3E51B121145082005C21B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A3E51B321145082005C21B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A3E51B821145082005C21B7 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A3E51BC21145082005C21B7 /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
 		5A3E51BE21145082005C21B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A3E51CC211450D0005C21B7 /* EasyStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyStyle.swift; sourceTree = "<group>"; };
 		5A3E51DF2114518D005C21B7 /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
@@ -115,6 +114,8 @@
 		5A3E5209211453D2005C21B7 /* EasyStyleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyStyleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A3E5210211453D2005C21B7 /* EasyStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyStyleTests.swift; sourceTree = "<group>"; };
 		5A3E5212211453D2005C21B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3E522A211455E0005C21B7 /* DemoTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		5A3E522B211455E0005C21B7 /* ViewStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStyleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,8 +191,9 @@
 		5A3E51BB21145082005C21B7 /* DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				5A3E51BC21145082005C21B7 /* DemoTests.swift */,
 				5A3E51BE21145082005C21B7 /* Info.plist */,
+				5A3E522B211455E0005C21B7 /* ViewStyleTests.swift */,
+				5A3E522A211455E0005C21B7 /* DemoTests-Bridging-Header.h */,
 			);
 			path = DemoTests;
 			sourceTree = "<group>";
@@ -417,6 +419,7 @@
 					};
 					5A3E51B721145082005C21B7 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 						TestTargetID = 5A3E51A321145081005C21B7;
 					};
 					5A3E5200211453D2005C21B7 = {
@@ -508,7 +511,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A3E51BD21145082005C21B7 /* DemoTests.swift in Sources */,
+				5A3E522C211455E0005C21B7 /* ViewStyleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,6 +741,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -747,6 +751,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Ober.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoTests/DemoTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
@@ -758,6 +764,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -767,6 +774,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Ober.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoTests/DemoTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
