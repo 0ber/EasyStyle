@@ -16,10 +16,17 @@ The example below is quite simple but shows how compose styles
 
 ### Cocoapods
 EasyStyle is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+it, simply add the following line to your `Podfile`:
 
 ```ruby
 pod "EasyStyle"
+```
+
+And [Carthage](https://github.com/Carthage/Carthage) users can simply add Mantle to their `Cartfile`:
+
+```ruby
+github "0ber/EasyStyle"
+
 ```
 
 ### Usage
