@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  EasyStyle
+//  Demo
 //
-//  Created by Alex K on 02/08/2018.
+//  Created by Alex K on 03/08/2018.
 //  Copyright © 2018 0ber. All rights reserved.
 //
 

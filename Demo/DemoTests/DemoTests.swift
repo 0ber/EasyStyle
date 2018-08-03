@@ -1,15 +1,15 @@
 //
-//  EasyStyleTests.swift
-//  EasyStyleTests
+//  DemoTests.swift
+//  DemoTests
 //
 //  Created by Alex K on 03/08/2018.
 //  Copyright © 2018 0ber. All rights reserved.
 //
 
 import XCTest
-@testable import EasyStyle
+@testable import Demo
 
-class EasyStyleTests: XCTestCase {
+class DemoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
