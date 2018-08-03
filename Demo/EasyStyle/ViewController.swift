@@ -18,8 +18,7 @@ class ViewController: UIViewController {
 
         let logInButton = UIButton()
         logInButton.setStyle(.logIn) // set style
-    }
-    
+
         let stack = UIStackView(arrangedSubviews: [logOutButton, logInButton])
         stack.spacing = 20
         stack.distribution = .fillEqually
