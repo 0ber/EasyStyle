@@ -14,7 +14,7 @@ The example below is quite simple but shows how compose styles
 * Autocomplete support
 * Short and readable code
 
-### Cocoapods
+### Installation
 EasyStyle is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your `Podfile`:
 
