@@ -42,7 +42,7 @@ public struct TextFieldStyle: StyleProtocol, ControlStyleCompatability, ViewStyl
     
     public static func attributedPlaceholder(_ value: NSAttributedString) -> Style {
         return { textField in
-            textField.attributedText = value
+            textField.attributedPlaceholder = value
             return textField
         }
     }
@@ -71,13 +71,6 @@ public struct TextFieldStyle: StyleProtocol, ControlStyleCompatability, ViewStyl
     public static func textAlignment(_ value: NSTextAlignment) -> Style {
         return { textField in
             textField.textAlignment = value
-            return textField
-        }
-    }
-    
-    public static func typingAttributes(_ value: [String: Any]) -> Style {
-        return { textField in
-            textField.typingAttributes = value
             return textField
         }
     }
