@@ -19,9 +19,9 @@ class TextViewStyleTests: XCTestCase {
     func testCreateViewStyle() {
         
         let style = TextViewStyle.backgroundColor(.red)
-        let textView = TextViewStyle(style: style)
+        let textViewStyle = TextViewStyle(style: style)
         
-        XCTAssertNotNil(textView.style)
+        XCTAssertNotNil(textViewStyle.style)
     }
     
     func testText() {

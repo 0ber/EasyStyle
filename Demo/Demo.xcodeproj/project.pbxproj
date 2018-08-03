@@ -43,6 +43,7 @@
 		5A3E522E21146D9F005C21B7 /* ControlStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E522D21146D9F005C21B7 /* ControlStyleTests.swift */; };
 		5A3E523021147195005C21B7 /* TextViewStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E522F21147195005C21B7 /* TextViewStyleTests.swift */; };
 		5A3E523221147B78005C21B7 /* TextFieldStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E523121147B78005C21B7 /* TextFieldStyleTests.swift */; };
+		5A3E523421148904005C21B7 /* TableViewStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E523321148904005C21B7 /* TableViewStyleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		5A3E522D21146D9F005C21B7 /* ControlStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlStyleTests.swift; sourceTree = "<group>"; };
 		5A3E522F21147195005C21B7 /* TextViewStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewStyleTests.swift; sourceTree = "<group>"; };
 		5A3E523121147B78005C21B7 /* TextFieldStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyleTests.swift; sourceTree = "<group>"; };
+		5A3E523321148904005C21B7 /* TableViewStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewStyleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 				5A3E522D21146D9F005C21B7 /* ControlStyleTests.swift */,
 				5A3E522F21147195005C21B7 /* TextViewStyleTests.swift */,
 				5A3E523121147B78005C21B7 /* TextFieldStyleTests.swift */,
+				5A3E523321148904005C21B7 /* TableViewStyleTests.swift */,
 			);
 			path = DemoTests;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				5A3E523221147B78005C21B7 /* TextFieldStyleTests.swift in Sources */,
 				5A3E523021147195005C21B7 /* TextViewStyleTests.swift in Sources */,
 				5A3E522E21146D9F005C21B7 /* ControlStyleTests.swift in Sources */,
+				5A3E523421148904005C21B7 /* TableViewStyleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
