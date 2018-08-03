@@ -167,13 +167,6 @@ extension ScrollViewStyleCompatability where Self: StyleProtocol, Self.ViewType:
         }
     }
     
-    public static func zomeScale(_ value: CGFloat, animated: Bool = false) -> Style {
-        return { scrollView in
-            scrollView.setZoomScale(value, animated: animated)
-            return scrollView
-        }
-    }
-    
     public static func maximumZoomScale(_ value: CGFloat) -> Style {
         return { scrollView in
             scrollView.maximumZoomScale = value
