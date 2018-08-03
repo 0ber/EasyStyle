@@ -45,7 +45,6 @@ class ViewController: UIViewController {
             titleLabel.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         }
         titleLabel.bottomAnchor.constraint(equalTo: stack.topAnchor).isActive = true
-        
     }
 }
 
