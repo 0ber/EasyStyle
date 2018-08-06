@@ -47,6 +47,7 @@
 		5A3E523621148F61005C21B7 /* ScrollViewStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E523521148F61005C21B7 /* ScrollViewStyleTests.swift */; };
 		5A3E5238211499D3005C21B7 /* LabelStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E5237211499D3005C21B7 /* LabelStyleTests.swift */; };
 		5AED6A682114A251000292BD /* ImageViewStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AED6A672114A251000292BD /* ImageViewStyleTests.swift */; };
+		FA42C358211834DB008E9FBF /* ButtonStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA42C357211834DB008E9FBF /* ButtonStyleTests.swift */; };
 		FAE79241211795540002C9E4 /* CollectionViewStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE79240211795540002C9E4 /* CollectionViewStyleTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +132,7 @@
 		5A3E523521148F61005C21B7 /* ScrollViewStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewStyleTests.swift; sourceTree = "<group>"; };
 		5A3E5237211499D3005C21B7 /* LabelStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyleTests.swift; sourceTree = "<group>"; };
 		5AED6A672114A251000292BD /* ImageViewStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewStyleTests.swift; sourceTree = "<group>"; };
+		FA42C357211834DB008E9FBF /* ButtonStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleTests.swift; sourceTree = "<group>"; };
 		FAE79240211795540002C9E4 /* CollectionViewStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewStyleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,6 +220,7 @@
 				5A3E5237211499D3005C21B7 /* LabelStyleTests.swift */,
 				5AED6A672114A251000292BD /* ImageViewStyleTests.swift */,
 				FAE79240211795540002C9E4 /* CollectionViewStyleTests.swift */,
+				FA42C357211834DB008E9FBF /* ButtonStyleTests.swift */,
 			);
 			path = DemoTests;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A3E522C211455E0005C21B7 /* ViewStyleTests.swift in Sources */,
+				FA42C358211834DB008E9FBF /* ButtonStyleTests.swift in Sources */,
 				FAE79241211795540002C9E4 /* CollectionViewStyleTests.swift in Sources */,
 				5A3E523221147B78005C21B7 /* TextFieldStyleTests.swift in Sources */,
 				5A3E523021147195005C21B7 /* TextViewStyleTests.swift in Sources */,
