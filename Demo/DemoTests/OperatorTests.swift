@@ -61,4 +61,19 @@ class OperatorTests: XCTestCase {
         XCTAssertEqual(view.backgroundColor, redColor)
         XCTAssertEqual(view.alpha, alpha)
     }
+    
+    func testOperator_Style_Plus_Style() {
+        let redColor = UIColor.red
+        let alpha: CGFloat = 0.5
+        
+        let redBackgroundSubstyle = ViewStyle(style: ViewStyle.backgroundColor(redColor))
+        let alphaStyle = ViewStyle(style: ViewStyle.alpha(alpha))
+        
+        let combineStyle = alphaStyle + redBackgroundSubstyle
+        
+        view.setStyle(combineStyle)
+        
+        XCTAssertEqual(view.backgroundColor, redColor)
+        XCTAssertEqual(view.alpha, alpha)
+    }
 }
