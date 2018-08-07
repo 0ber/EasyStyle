@@ -18,18 +18,17 @@ class TextFieldStyleTests: XCTestCase {
     func testCreateViewStyle() {
         
         let style = TextFieldStyle.backgroundColor(.red)
-        let textSytle = TextFieldStyle(style: style)
-        
-        XCTAssertNotNil(textSytle.style)
+
+        XCTAssertNotNil(style.style)
     }
     
     func testText() {
         let text = "some text"
         
         let style = TextFieldStyle.text(text)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.text, text)
     }
@@ -38,9 +37,9 @@ class TextFieldStyleTests: XCTestCase {
         let attributedText = NSAttributedString(string: "some text")
         
         let style = TextFieldStyle.attributedText(attributedText)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.attributedText?.string, attributedText.string)
     }
@@ -49,9 +48,9 @@ class TextFieldStyleTests: XCTestCase {
         let placeholder = "some text"
         
         let style = TextFieldStyle.placeholder(placeholder)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.placeholder, placeholder)
     }
@@ -60,9 +59,9 @@ class TextFieldStyleTests: XCTestCase {
         let attributedText = NSAttributedString(string: "some text")
         
         let style = TextFieldStyle.attributedPlaceholder(attributedText)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.attributedPlaceholder?.string, attributedText.string)
     }
@@ -72,9 +71,9 @@ class TextFieldStyleTests: XCTestCase {
         let defaultTextAttributes = [NSAttributedStringKey.foregroundColor.rawValue: color]
 
         let style = TextFieldStyle.defaultTextAttributes(defaultTextAttributes)
-        let viewStyle = TextFieldStyle(style: style)
+         
 
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
 
         let returnColor = textField.defaultTextAttributes[NSAttributedStringKey.foregroundColor.rawValue] as? UIColor
 
@@ -85,9 +84,9 @@ class TextFieldStyleTests: XCTestCase {
         let font = UIFont.systemFont(ofSize: 18)
         
         let style = TextFieldStyle.font(font)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.font, font)
     }
@@ -96,9 +95,9 @@ class TextFieldStyleTests: XCTestCase {
         let textColor = UIColor.red
         
         let style = TextFieldStyle.textColor(textColor)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.textColor, textColor)
     }
@@ -107,9 +106,9 @@ class TextFieldStyleTests: XCTestCase {
         let textAlignment = NSTextAlignment.center
         
         let style = TextFieldStyle.textAlignment(textAlignment)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.textAlignment, textAlignment)
     }
@@ -118,9 +117,9 @@ class TextFieldStyleTests: XCTestCase {
         let adjustsFontSizeToFitWidth = true
         
         let style = TextFieldStyle.adjustsFontSizeToFitWidth(adjustsFontSizeToFitWidth)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.adjustsFontSizeToFitWidth, adjustsFontSizeToFitWidth)
     }
@@ -129,9 +128,9 @@ class TextFieldStyleTests: XCTestCase {
         let minimumFontSize: CGFloat = 6
         
         let style = TextFieldStyle.minimumFontSize(minimumFontSize)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.minimumFontSize, minimumFontSize)
     }
@@ -140,9 +139,9 @@ class TextFieldStyleTests: XCTestCase {
         let clearsOnBeginEditing = true
         
         let style = TextFieldStyle.clearsOnBeginEditing(clearsOnBeginEditing)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.clearsOnBeginEditing, clearsOnBeginEditing)
     }
@@ -151,9 +150,9 @@ class TextFieldStyleTests: XCTestCase {
         let clearsOnInsertion = true
         
         let style = TextFieldStyle.clearsOnInsertion(clearsOnInsertion)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.clearsOnInsertion, clearsOnInsertion)
     }
@@ -162,9 +161,9 @@ class TextFieldStyleTests: XCTestCase {
         let allowsEditingTextAttributes = true
         
         let style = TextFieldStyle.allowsEditingTextAttributes(allowsEditingTextAttributes)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.allowsEditingTextAttributes, allowsEditingTextAttributes)
     }
@@ -173,9 +172,9 @@ class TextFieldStyleTests: XCTestCase {
         let borderStyle = UITextBorderStyle.bezel
         
         let style = TextFieldStyle.borderStyle(borderStyle)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.borderStyle, borderStyle)
     }
@@ -184,9 +183,9 @@ class TextFieldStyleTests: XCTestCase {
         let background = UIImage()
 
         let style = TextFieldStyle.background(background)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.background, background)
     }
@@ -195,9 +194,9 @@ class TextFieldStyleTests: XCTestCase {
         let disabledBackground = UIImage()
         
         let style = TextFieldStyle.disabledBackground(disabledBackground)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.disabledBackground, disabledBackground)
     }
@@ -206,9 +205,9 @@ class TextFieldStyleTests: XCTestCase {
         let clearButtonMode = UITextFieldViewMode.always
         
         let style = TextFieldStyle.clearButtonMode(clearButtonMode)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.clearButtonMode, clearButtonMode)
     }
@@ -217,9 +216,9 @@ class TextFieldStyleTests: XCTestCase {
         let leftView = UIView()
         
         let style = TextFieldStyle.leftView(leftView)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.leftView, leftView)
     }
@@ -228,9 +227,9 @@ class TextFieldStyleTests: XCTestCase {
         let leftViewMode = UITextFieldViewMode.always
         
         let style = TextFieldStyle.leftViewMode(leftViewMode)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.leftViewMode, leftViewMode)
     }
@@ -239,9 +238,9 @@ class TextFieldStyleTests: XCTestCase {
         let rightView = UIView()
         
         let style = TextFieldStyle.rightView(rightView)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.rightView, rightView)
     }
@@ -250,9 +249,9 @@ class TextFieldStyleTests: XCTestCase {
         let rightViewMode = UITextFieldViewMode.always
         
         let style = TextFieldStyle.rightViewMode(rightViewMode)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.rightViewMode, rightViewMode)
     }
@@ -261,9 +260,9 @@ class TextFieldStyleTests: XCTestCase {
         let inputView = UIView()
 
         let style = TextFieldStyle.inputView(inputView)
-        let viewStyle = TextFieldStyle(style: style)
+         
 
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
 
         XCTAssertEqual(textField.inputView, inputView)
     }
@@ -272,9 +271,9 @@ class TextFieldStyleTests: XCTestCase {
         let inputAccessoryView = UIView()
         
         let style = TextFieldStyle.inputAccessoryView(inputAccessoryView)
-        let viewStyle = TextFieldStyle(style: style)
+         
         
-        textField.setStyle(viewStyle)
+        textField.setStyle(style)
         
         XCTAssertEqual(textField.inputAccessoryView, inputAccessoryView)
     }

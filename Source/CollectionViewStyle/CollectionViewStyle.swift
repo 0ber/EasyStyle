@@ -20,39 +20,39 @@ public struct CollectionViewStyle: StyleProtocol, ViewStyleCompatability, Scroll
     
     // MARK: UICollectionView
     
-    public static func backgroundView(_ value: UIView) -> Style {
-        return { collectionView in
+    public static func backgroundView(_ value: UIView) -> CollectionViewStyle {
+        return CollectionViewStyle(style:  { collectionView in
             collectionView.backgroundView = value
             return collectionView
-        }
+        })
     }
     
-    public static func isPrefetchingEnabled(_ value: Bool) -> Style {
-        return { collectionView in
+    public static func isPrefetchingEnabled(_ value: Bool) -> CollectionViewStyle {
+        return CollectionViewStyle(style:  { collectionView in
             collectionView.isPrefetchingEnabled = value
             return collectionView
-        }
+        })
     }
     
     @available(iOS 11.0, *)
-    public static func dragInteractionEnabled(_ value: Bool) -> Style {
-        return { collectionView in
+    public static func dragInteractionEnabled(_ value: Bool) -> CollectionViewStyle {
+        return CollectionViewStyle(style:  { collectionView in
             collectionView.dragInteractionEnabled = value
             return collectionView
-        }
+        })
     }
     
-    public static func allowsSelection(_ value: Bool) -> Style {
-        return { collectionView in
+    public static func allowsSelection(_ value: Bool) -> CollectionViewStyle {
+        return CollectionViewStyle(style:  { collectionView in
             collectionView.allowsSelection = value
             return collectionView
-        }
+        })
     }
     
-    public static func allowsMultipleSelection(_ value: Bool) -> Style {
-        return { collectionView in
+    public static func allowsMultipleSelection(_ value: Bool) -> CollectionViewStyle {
+        return CollectionViewStyle(style:  { collectionView in
             collectionView.allowsMultipleSelection = value
             return collectionView
-        }
+        })
     }
 }

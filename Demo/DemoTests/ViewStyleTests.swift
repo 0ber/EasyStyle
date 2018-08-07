@@ -17,18 +17,15 @@ class ViewStyleTests: XCTestCase {
     func testCreateViewStyle() {
         
         let style = ViewStyle.backgroundColor(.red)
-        let viewStyle = ViewStyle(style: style)
-
-        XCTAssertNotNil(viewStyle.style)
+        XCTAssertNotNil(style.style)
     }
     
     func testBackgroundColor() {
         let color = UIColor.red
         
         let style = ViewStyle.backgroundColor(color)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.backgroundColor, color)
     }
@@ -37,9 +34,7 @@ class ViewStyleTests: XCTestCase {
         let alpha: CGFloat = 0.5
         
         let style = ViewStyle.alpha(alpha)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+        view.setStyle(style)
         
         XCTAssertEqual(view.alpha, alpha)
     }
@@ -48,9 +43,8 @@ class ViewStyleTests: XCTestCase {
         let color = UIColor.red
         
         let style = ViewStyle.tintColor(color)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.tintColor, color)
     }
@@ -59,9 +53,8 @@ class ViewStyleTests: XCTestCase {
         let tintAdjustmentMode = UIViewTintAdjustmentMode.dimmed
         
         let style = ViewStyle.tintAdjustmentMode(tintAdjustmentMode)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.tintAdjustmentMode, tintAdjustmentMode)
     }
@@ -70,9 +63,8 @@ class ViewStyleTests: XCTestCase {
         let isHidden = true
         
         let style = ViewStyle.isHidden(isHidden)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.isHidden, isHidden)
     }
@@ -81,9 +73,8 @@ class ViewStyleTests: XCTestCase {
         let isOpaque = false
         
         let style = ViewStyle.isOpaque(isOpaque)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.isOpaque, isOpaque)
     }
@@ -92,9 +83,8 @@ class ViewStyleTests: XCTestCase {
         let clipsToBounds = true
         
         let style = ViewStyle.clipsToBounds(clipsToBounds)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.clipsToBounds, clipsToBounds)
     }
@@ -103,9 +93,8 @@ class ViewStyleTests: XCTestCase {
         let clearsContextBeforeDrawing = false
         
         let style = ViewStyle.clearsContextBeforeDrawing(clearsContextBeforeDrawing)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.clearsContextBeforeDrawing, clearsContextBeforeDrawing)
     }
@@ -114,9 +103,8 @@ class ViewStyleTests: XCTestCase {
         let isUserInteractionEnabled = false
         
         let style = ViewStyle.isUserInteractionEnabled(isUserInteractionEnabled)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.isUserInteractionEnabled, isUserInteractionEnabled)
     }
@@ -125,9 +113,8 @@ class ViewStyleTests: XCTestCase {
         let isMultipleTouchEnabled = true
         
         let style = ViewStyle.isMultipleTouchEnabled(isMultipleTouchEnabled)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.isMultipleTouchEnabled, isMultipleTouchEnabled)
     }
@@ -136,9 +123,8 @@ class ViewStyleTests: XCTestCase {
         let isExclusiveTouch = true
         
         let style = ViewStyle.isExclusiveTouch(isExclusiveTouch)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.isExclusiveTouch, isExclusiveTouch)
     }
@@ -147,9 +133,8 @@ class ViewStyleTests: XCTestCase {
         let masksToBounds = true
         
         let style = ViewStyle.masksToBounds(masksToBounds)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.layer.masksToBounds, masksToBounds)
     }
@@ -158,9 +143,8 @@ class ViewStyleTests: XCTestCase {
         let cornerRadius: CGFloat = 0.5
         
         let style = ViewStyle.cornerRadius(cornerRadius)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.layer.cornerRadius, cornerRadius)
     }
@@ -169,9 +153,8 @@ class ViewStyleTests: XCTestCase {
         let maskedCorners = CACornerMask.layerMaxXMinYCorner
         
         let style = ViewStyle.maskedCorners(maskedCorners)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.layer.maskedCorners, maskedCorners)
     }
@@ -180,9 +163,8 @@ class ViewStyleTests: XCTestCase {
         let borderWidth: CGFloat = 4
         
         let style = ViewStyle.borderWidth(borderWidth)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.layer.borderWidth, borderWidth)
     }
@@ -191,9 +173,8 @@ class ViewStyleTests: XCTestCase {
         let borderColor = UIColor.red
         
         let style = ViewStyle.borderColor(borderColor)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.layer.borderColor, borderColor.cgColor)
     }
@@ -202,9 +183,8 @@ class ViewStyleTests: XCTestCase {
         let shadowOpacity: Float = 0.5
         
         let style = ViewStyle.shadowOpacity(shadowOpacity)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.layer.shadowOpacity, shadowOpacity)
     }
@@ -213,9 +193,8 @@ class ViewStyleTests: XCTestCase {
         let shadowRadius: CGFloat = 4
         
         let style = ViewStyle.shadowRadius(shadowRadius)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.layer.shadowRadius, shadowRadius)
     }
@@ -224,9 +203,8 @@ class ViewStyleTests: XCTestCase {
         let layerShadowOffset = CGSize(width: 10, height: 5)
         
         let style = ViewStyle.layerShadowOffset(layerShadowOffset)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.layer.shadowOffset, layerShadowOffset)
     }
@@ -235,9 +213,8 @@ class ViewStyleTests: XCTestCase {
         let layerShadowColor = UIColor.red
         
         let style = ViewStyle.layerShadowColor(layerShadowColor)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.layer.shadowColor, layerShadowColor.cgColor)
     }
@@ -246,9 +223,8 @@ class ViewStyleTests: XCTestCase {
         let shadowPath = CGPath(ellipseIn: CGRect(x: 10, y: 20, width: 30, height: 50), transform: nil)
         
         let style = ViewStyle.shadowPath(shadowPath)
-        let viewStyle = ViewStyle(style: style)
-        
-        view.setStyle(viewStyle)
+
+        view.setStyle(style)
         
         XCTAssertEqual(view.layer.shadowPath, shadowPath)
     }

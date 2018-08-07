@@ -17,18 +17,16 @@ class LabelStyleTests: XCTestCase {
     func testCreateLabelStyle() {
         
         let style = LabelStyle.backgroundColor(.red)
-        let labelStyle = LabelStyle(style: style)
-        
-        XCTAssertNotNil(labelStyle.style)
+
+        XCTAssertNotNil(style.style)
     }
     
     func testText() {
         let text = "some text"
         
         let style = LabelStyle.text(text)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.text, text)
     }
@@ -38,9 +36,8 @@ class LabelStyleTests: XCTestCase {
         let attributedText = NSAttributedString(string: text)
         
         let style = LabelStyle.attributedText(attributedText)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.attributedText?.string, attributedText.string)
     }
@@ -49,9 +46,8 @@ class LabelStyleTests: XCTestCase {
         let font = UIFont.systemFont(ofSize: 18)
         
         let style = LabelStyle.font(font)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.font, font)
     }
@@ -60,9 +56,8 @@ class LabelStyleTests: XCTestCase {
         let color = UIColor.red
         
         let style = LabelStyle.textColor(color)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.textColor, color)
     }
@@ -71,9 +66,8 @@ class LabelStyleTests: XCTestCase {
         let textAligment = NSTextAlignment.center
         
         let style = LabelStyle.textAligment(textAligment)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.textAlignment, textAligment)
     }
@@ -82,9 +76,8 @@ class LabelStyleTests: XCTestCase {
         let lineBreakMode = NSLineBreakMode.byClipping
         
         let style = LabelStyle.lineBreakMode(lineBreakMode)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.lineBreakMode, lineBreakMode)
     }
@@ -93,9 +86,8 @@ class LabelStyleTests: XCTestCase {
         let baselineAdjustment = UIBaselineAdjustment.alignCenters
         
         let style = LabelStyle.baselineAdjustment(baselineAdjustment)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.baselineAdjustment, baselineAdjustment)
     }
@@ -104,9 +96,8 @@ class LabelStyleTests: XCTestCase {
         let numberOfLines = 6
         
         let style = LabelStyle.numberOfLines(numberOfLines)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.numberOfLines, numberOfLines)
     }
@@ -115,9 +106,8 @@ class LabelStyleTests: XCTestCase {
         let highlightedTextColor = UIColor.red
         
         let style = LabelStyle.highlightedTextColor(highlightedTextColor)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.highlightedTextColor, highlightedTextColor)
     }
@@ -126,9 +116,8 @@ class LabelStyleTests: XCTestCase {
         let shadowColor = UIColor.red
         
         let style = LabelStyle.shadowColor(shadowColor)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.shadowColor, shadowColor)
     }
@@ -137,9 +126,8 @@ class LabelStyleTests: XCTestCase {
         let shadowOffset = CGSize(width: 23, height: 43)
         
         let style = LabelStyle.shadowOffset(shadowOffset)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.shadowOffset, shadowOffset)
     }
@@ -148,9 +136,8 @@ class LabelStyleTests: XCTestCase {
         let isEnabled = false
         
         let style = LabelStyle.isEnabled(isEnabled)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.isEnabled, isEnabled)
     }
@@ -159,9 +146,8 @@ class LabelStyleTests: XCTestCase {
         let adjustsFontSizeToFitWidth = true
         
         let style = LabelStyle.adjustsFontSizeToFitWidth(adjustsFontSizeToFitWidth)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.adjustsFontSizeToFitWidth, adjustsFontSizeToFitWidth)
     }
@@ -170,9 +156,8 @@ class LabelStyleTests: XCTestCase {
         let allowsDefaultTighteningForTruncation = true
         
         let style = LabelStyle.allowsDefaultTighteningForTruncation(allowsDefaultTighteningForTruncation)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.allowsDefaultTighteningForTruncation, allowsDefaultTighteningForTruncation)
     }
@@ -181,9 +166,8 @@ class LabelStyleTests: XCTestCase {
         let minimumScaleFactor: CGFloat = 1
         
         let style = LabelStyle.minimumScaleFactor(minimumScaleFactor)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.minimumScaleFactor, minimumScaleFactor)
     }
@@ -192,9 +176,8 @@ class LabelStyleTests: XCTestCase {
         let isHighlighted = true
         
         let style = LabelStyle.isHighlighted(isHighlighted)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.isHighlighted, isHighlighted)
     }
@@ -203,9 +186,8 @@ class LabelStyleTests: XCTestCase {
         let preferredMaxLayoutWidth: CGFloat = 3
         
         let style = LabelStyle.preferredMaxLayoutWidth(preferredMaxLayoutWidth)
-        let labelStyle = LabelStyle(style: style)
         
-        label.setStyle(labelStyle)
+        label.setStyle(style)
         
         XCTAssertEqual(label.preferredMaxLayoutWidth, preferredMaxLayoutWidth)
     }

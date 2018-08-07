@@ -20,66 +20,66 @@ public struct ImageViewStyle: StyleProtocol, ViewStyleCompatability {
     
     // MARK: ImageView
     
-    public static func image(_ value: UIImage) -> Style {
-        return { imageView in
+    public static func image(_ value: UIImage) -> ImageViewStyle {
+        return ImageViewStyle( style: { imageView in
             imageView.image = value
             return imageView
-        }
+        })
     }
     
-    public static func highlightedImage(_ value: UIImage) -> Style {
-        return { imageView in
+    public static func highlightedImage(_ value: UIImage) -> ImageViewStyle {
+        return ImageViewStyle( style: { imageView in
             imageView.highlightedImage = value
             return imageView
-        }
+        })
     }
     
-    public static func animationImages(_ value: [UIImage]) -> Style {
-        return { imageView in
+    public static func animationImages(_ value: [UIImage]) -> ImageViewStyle {
+        return ImageViewStyle( style: { imageView in
             imageView.animationImages = value
             return imageView
-        }
+        })
     }
     
-    public static func highlightedAnimationImages(_ value: [UIImage]) -> Style {
-        return { imageView in
+    public static func highlightedAnimationImages(_ value: [UIImage]) -> ImageViewStyle {
+        return ImageViewStyle( style: { imageView in
             imageView.highlightedAnimationImages = value
             return imageView
-        }
+        })
     }
     
-    public static func animationDuration(_ value: TimeInterval) -> Style {
-        return { imageView in
+    public static func animationDuration(_ value: TimeInterval) -> ImageViewStyle {
+        return ImageViewStyle( style: { imageView in
             imageView.animationDuration = value
             return imageView
-        }
+        })
     }
     
-    public static func animationRepeatCount(_ value: Int) -> Style {
-        return { imageView in
+    public static func animationRepeatCount(_ value: Int) -> ImageViewStyle {
+        return ImageViewStyle( style: { imageView in
             imageView.animationRepeatCount = value
             return imageView
-        }
+        })
     }
     
-    public static func isUserInteractionEnabled(_ value: Bool) -> Style {
-        return { imageView in
+    public static func isUserInteractionEnabled(_ value: Bool) -> ImageViewStyle {
+        return ImageViewStyle( style: { imageView in
             imageView.isUserInteractionEnabled = value
             return imageView
-        }
+        })
     }
     
-    public static func isHighlighted(_ value: Bool) -> Style {
-        return { imageView in
+    public static func isHighlighted(_ value: Bool) -> ImageViewStyle {
+        return ImageViewStyle( style: { imageView in
             imageView.isHighlighted = value
             return imageView
-        }
+        })
     }
     
-    public static func tintColor(_ value: UIColor) -> Style {
-        return { imageView in
+    public static func tintColor(_ value: UIColor) -> ImageViewStyle {
+        return ImageViewStyle( style: { imageView in
             imageView.tintColor = value
             return imageView
-        }
+        })
     }
 }

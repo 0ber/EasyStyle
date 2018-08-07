@@ -18,18 +18,16 @@ class TableViewStyleTests: XCTestCase {
     func testCreateViewStyle() {
         
         let style = TableViewStyle.backgroundColor(.red)
-        let tableStyle = TableViewStyle(style: style)
-        
-        XCTAssertNotNil(tableStyle.style)
+
+        XCTAssertNotNil(style.style)
     }
     
     func testRowHeight() {
         let rowHeight: CGFloat = 103
         
         let style = TableViewStyle.rowHeight(rowHeight)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.rowHeight, rowHeight)
     }
@@ -38,9 +36,8 @@ class TableViewStyleTests: XCTestCase {
         let separatorStyle = UITableViewCellSeparatorStyle.singleLine
         
         let style = TableViewStyle.separatorStyle(separatorStyle)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.separatorStyle, separatorStyle)
     }
@@ -49,9 +46,8 @@ class TableViewStyleTests: XCTestCase {
         let separatorColor = UIColor.red
         
         let style = TableViewStyle.separatorColor(separatorColor)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.separatorColor, separatorColor)
     }
@@ -60,9 +56,8 @@ class TableViewStyleTests: XCTestCase {
         let separatorEffect = UIVisualEffect()
         
         let style = TableViewStyle.separatorEffect(separatorEffect)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.separatorEffect, separatorEffect)
     }
@@ -72,9 +67,8 @@ class TableViewStyleTests: XCTestCase {
         backgroundView.tag = 11
         
         let style = TableViewStyle.backgroundView(backgroundView)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.backgroundView, backgroundView)
     }
@@ -83,9 +77,8 @@ class TableViewStyleTests: XCTestCase {
         let separatorInset = UIEdgeInsets(top: 1, left: 2, bottom: 3, right: 4)
         
         let style = TableViewStyle.separatorInset(separatorInset)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.separatorInset, separatorInset)
     }
@@ -94,9 +87,8 @@ class TableViewStyleTests: XCTestCase {
         let separatorInsetReference = UITableViewSeparatorInsetReference.fromAutomaticInsets
         
         let style = TableViewStyle.separatorInsetReference(separatorInsetReference)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.separatorInsetReference, separatorInsetReference)
     }
@@ -106,9 +98,8 @@ class TableViewStyleTests: XCTestCase {
         tableHeaderView.tag = 11
         
         let style = TableViewStyle.tableHeaderView(tableHeaderView)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.tableHeaderView, tableHeaderView)
     }
@@ -118,9 +109,8 @@ class TableViewStyleTests: XCTestCase {
         tableFooterView.tag = 11
         
         let style = TableViewStyle.tableFooterView(tableFooterView)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.tableFooterView, tableFooterView)
     }
@@ -129,9 +119,8 @@ class TableViewStyleTests: XCTestCase {
         let sectionHeaderHeight: CGFloat = 203
 
         let style = TableViewStyle.sectionHeaderHeight(sectionHeaderHeight)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.sectionHeaderHeight, sectionHeaderHeight)
     }
@@ -140,9 +129,8 @@ class TableViewStyleTests: XCTestCase {
         let sectionFooterHeight: CGFloat = 203
         
         let style = TableViewStyle.sectionFooterHeight(sectionFooterHeight)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.sectionFooterHeight, sectionFooterHeight)
     }
@@ -151,9 +139,8 @@ class TableViewStyleTests: XCTestCase {
         let estimatedRowHeight: CGFloat = 203
         
         let style = TableViewStyle.estimatedRowHeight(estimatedRowHeight)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.estimatedRowHeight, estimatedRowHeight)
     }
@@ -162,9 +149,8 @@ class TableViewStyleTests: XCTestCase {
         let estimatedSectionHeaderHeight: CGFloat = 203
         
         let style = TableViewStyle.estimatedSectionHeaderHeight(estimatedSectionHeaderHeight)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.estimatedSectionHeaderHeight, estimatedSectionHeaderHeight)
     }
@@ -173,9 +159,8 @@ class TableViewStyleTests: XCTestCase {
         let estimatedSectionFooterHeight: CGFloat = 203
         
         let style = TableViewStyle.estimatedSectionFooterHeight(estimatedSectionFooterHeight)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.estimatedSectionFooterHeight, estimatedSectionFooterHeight)
     }
@@ -184,9 +169,8 @@ class TableViewStyleTests: XCTestCase {
         let allowsSelection = false
         
         let style = TableViewStyle.allowsSelection(allowsSelection)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.allowsSelection, allowsSelection)
     }
@@ -195,9 +179,8 @@ class TableViewStyleTests: XCTestCase {
         let allowsMultipleSelection = true
         
         let style = TableViewStyle.allowsMultipleSelection(allowsMultipleSelection)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.allowsMultipleSelection, allowsMultipleSelection)
     }
@@ -206,9 +189,8 @@ class TableViewStyleTests: XCTestCase {
         let allowsSelectionDuringEditing = true
         
         let style = TableViewStyle.allowsSelectionDuringEditing(allowsSelectionDuringEditing)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.allowsSelectionDuringEditing, allowsSelectionDuringEditing)
     }
@@ -217,9 +199,8 @@ class TableViewStyleTests: XCTestCase {
         let allowsMultipleSelectionDuringEditing = true
         
         let style = TableViewStyle.allowsMultipleSelectionDuringEditing(allowsMultipleSelectionDuringEditing)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.allowsMultipleSelectionDuringEditing, allowsMultipleSelectionDuringEditing)
     }
@@ -228,9 +209,8 @@ class TableViewStyleTests: XCTestCase {
         let sectionIndexMinimumDisplayRowCount = 3
         
         let style = TableViewStyle.sectionIndexMinimumDisplayRowCount(sectionIndexMinimumDisplayRowCount)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.sectionIndexMinimumDisplayRowCount, sectionIndexMinimumDisplayRowCount)
     }
@@ -239,9 +219,8 @@ class TableViewStyleTests: XCTestCase {
         let insetsContentViewsToSafeArea = false
         
         let style = TableViewStyle.insetsContentViewsToSafeArea(insetsContentViewsToSafeArea)
-        let viewStyle = TableViewStyle(style: style)
         
-        tableView.setStyle(viewStyle)
+        tableView.setStyle(style)
         
         XCTAssertEqual(tableView.insetsContentViewsToSafeArea, insetsContentViewsToSafeArea)
     }

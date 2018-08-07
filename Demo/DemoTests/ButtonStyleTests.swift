@@ -17,18 +17,15 @@ class ButtonStyleTests: XCTestCase {
     func testCreateButtonStyle() {
         
         let style = ButtonStyle.backgroundColor(.red)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        XCTAssertNotNil(buttonStyle.style)
+
+        XCTAssertNotNil(style.style)
     }
     
     func testTitleBackgroundView() {
         let title = "some text"
         
         let style = ButtonStyle.title(title, .normal)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.title(for: .normal), title)
     }
@@ -37,9 +34,7 @@ class ButtonStyleTests: XCTestCase {
         let attributedTitle = NSAttributedString(string: "some text")
         
         let style = ButtonStyle.attributedTitle(attributedTitle, .normal)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.attributedTitle(for: .normal)?.string, attributedTitle.string)
     }
@@ -48,9 +43,7 @@ class ButtonStyleTests: XCTestCase {
         let titleColor = UIColor.red
         
         let style = ButtonStyle.titleColor(titleColor, .normal)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.titleColor(for: .normal), titleColor)
     }
@@ -59,9 +52,7 @@ class ButtonStyleTests: XCTestCase {
         let titleShadowColor = UIColor.red
         
         let style = ButtonStyle.titleShadowColor(titleShadowColor, .normal)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.titleShadowColor(for: .normal), titleShadowColor)
     }
@@ -70,9 +61,7 @@ class ButtonStyleTests: XCTestCase {
         let reversesTitleShadowWhenHighlighted = true
         
         let style = ButtonStyle.reversesTitleShadowWhenHighlighted(reversesTitleShadowWhenHighlighted)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.reversesTitleShadowWhenHighlighted, reversesTitleShadowWhenHighlighted)
     }
@@ -81,9 +70,7 @@ class ButtonStyleTests: XCTestCase {
         let adjustsImageWhenHighlighted = false
         
         let style = ButtonStyle.adjustsImageWhenHighlighted(adjustsImageWhenHighlighted)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.adjustsImageWhenHighlighted, adjustsImageWhenHighlighted)
     }
@@ -92,9 +79,7 @@ class ButtonStyleTests: XCTestCase {
         let adjustsImageWhenDisabled = true
         
         let style = ButtonStyle.adjustsImageWhenDisabled(adjustsImageWhenDisabled)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.adjustsImageWhenDisabled, adjustsImageWhenDisabled)
     }
@@ -103,9 +88,7 @@ class ButtonStyleTests: XCTestCase {
         let showsTouchWhenHighlighted = true
         
         let style = ButtonStyle.showsTouchWhenHighlighted(showsTouchWhenHighlighted)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.showsTouchWhenHighlighted, showsTouchWhenHighlighted)
     }
@@ -114,9 +97,7 @@ class ButtonStyleTests: XCTestCase {
         let backgroundImage = UIImage()
         
         let style = ButtonStyle.backgroundImage(backgroundImage, .normal)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.backgroundImage(for: .normal), backgroundImage)
     }
@@ -125,9 +106,7 @@ class ButtonStyleTests: XCTestCase {
         let image = UIImage()
         
         let style = ButtonStyle.image(image, .normal)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.image(for: .normal), image)
     }
@@ -136,9 +115,7 @@ class ButtonStyleTests: XCTestCase {
         let tintColor = UIColor.red
         
         let style = ButtonStyle.tintColor(tintColor)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.tintColor, tintColor)
     }
@@ -147,9 +124,7 @@ class ButtonStyleTests: XCTestCase {
         let contentEdgeInsets = UIEdgeInsets(top: 1, left: 2, bottom: 3, right: 4)
         
         let style = ButtonStyle.contentEdgeInsets(contentEdgeInsets)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.contentEdgeInsets, contentEdgeInsets)
     }
@@ -158,9 +133,7 @@ class ButtonStyleTests: XCTestCase {
         let titleEdgeInsets = UIEdgeInsets(top: 1, left: 2, bottom: 3, right: 4)
         
         let style = ButtonStyle.titleEdgeInsets(titleEdgeInsets)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.titleEdgeInsets, titleEdgeInsets)
     }
@@ -169,9 +142,7 @@ class ButtonStyleTests: XCTestCase {
         let imageEdgeInsets = UIEdgeInsets(top: 1, left: 2, bottom: 3, right: 4)
         
         let style = ButtonStyle.imageEdgeInsets(imageEdgeInsets)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.imageEdgeInsets, imageEdgeInsets)
     }
@@ -180,9 +151,7 @@ class ButtonStyleTests: XCTestCase {
         let titleFont = UIFont.systemFont(ofSize: 18)
         
         let style = ButtonStyle.titleFont(titleFont)
-        let buttonStyle = ButtonStyle(style: style)
-        
-        button.setStyle(buttonStyle)
+        button.setStyle(style)
         
         XCTAssertEqual(button.titleLabel?.font, titleFont)
     }

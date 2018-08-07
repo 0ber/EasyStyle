@@ -19,19 +19,15 @@ class ControlStyleTests: XCTestCase {
     func testCreateControlStyle() {
     
         let style = ControlStyle.backgroundColor(.red)
-        
-        let controlStyle = ControlStyle(style: style)
-        
-        XCTAssertNotNil(controlStyle.style)
+        XCTAssertNotNil(style.style)
     }
     
     func testIsEnabled() {
         let isEnabled = false
         
         let style = ControlStyle.isEnabled(isEnabled)
-        let viewStyle = ControlStyle(style: style)
-        
-        control.setStyle(viewStyle)
+
+        control.setStyle(style)
         
         XCTAssertEqual(control.isEnabled, isEnabled)
     }
@@ -40,9 +36,8 @@ class ControlStyleTests: XCTestCase {
         let isSelected = false
         
         let style = ControlStyle.isEnabled(isSelected)
-        let viewStyle = ControlStyle(style: style)
-        
-        control.setStyle(viewStyle)
+
+        control.setStyle(style)
         
         XCTAssertEqual(control.isSelected, isSelected)
     }
@@ -51,9 +46,8 @@ class ControlStyleTests: XCTestCase {
         let isHighlighted = false
         
         let style = ControlStyle.isEnabled(isHighlighted)
-        let viewStyle = ControlStyle(style: style)
-        
-        control.setStyle(viewStyle)
+
+        control.setStyle(style)
         
         XCTAssertEqual(control.isHighlighted, isHighlighted)
     }
@@ -62,9 +56,8 @@ class ControlStyleTests: XCTestCase {
         let contentVerticalAlignment = UIControlContentVerticalAlignment.bottom
         
         let style = ControlStyle.contentVerticalAlignment(contentVerticalAlignment)
-        let viewStyle = ControlStyle(style: style)
-        
-        control.setStyle(viewStyle)
+
+        control.setStyle(style)
         
         XCTAssertEqual(control.contentVerticalAlignment, contentVerticalAlignment)
     }
@@ -73,9 +66,8 @@ class ControlStyleTests: XCTestCase {
         let contentHorizontalAlignment = UIControlContentHorizontalAlignment.center
         
         let style = ControlStyle.contentHorizontalAlignment(contentHorizontalAlignment)
-        let viewStyle = ControlStyle(style: style)
-        
-        control.setStyle(viewStyle)
+
+        control.setStyle(style)
         
         XCTAssertEqual(control.contentHorizontalAlignment, contentHorizontalAlignment)
     }

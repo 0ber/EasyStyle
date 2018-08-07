@@ -55,13 +55,14 @@ extension ButtonStyle {
     private static let roundBorder = borderWidth(1) + cornerRadius(5)
     private static let h1 = titleFont(.systemFont(ofSize: 18))
     private static let roundH1 = roundBorder + h1
-    
+
     private static let redButton = roundH1 + titleColor(#colorLiteral(red: 0.8980392157, green: 0.2274509804, blue: 0.2509803922, alpha: 1), .normal) + borderColor(#colorLiteral(red: 0.8980392157, green: 0.2274509804, blue: 0.2509803922, alpha: 1))
     private static let blueButton = roundH1 + titleColor(#colorLiteral(red: 0.1882352941, green: 0.662745098, blue: 0.8705882353, alpha: 1), .normal) + borderColor(#colorLiteral(red: 0.1882352941, green: 0.662745098, blue: 0.8705882353, alpha: 1))
-    
+
     // create style
-    static let logIn = ButtonStyle.create <<< blueButton + title("Login", .normal)
-    static let logOut = ButtonStyle.create <<< redButton + title("Logout", .normal)
+    static let logIn = blueButton + title("Login", .normal)
+    static let logOut = redButton + title("Logout", .normal)
+
 }
 
 // MARK: Label Style
@@ -72,6 +73,6 @@ extension LabelStyle {
     private static let title = h1 + textColor(#colorLiteral(red: 0.4235294118, green: 0.2862745098, blue: 0.7215686275, alpha: 1)) + textAligment(.center)
 
     // create style
-    static let easyStyle = LabelStyle.create <<< title + text("Easy Style")
+    static let easyStyle = title + text("Easy Style")
 }
 

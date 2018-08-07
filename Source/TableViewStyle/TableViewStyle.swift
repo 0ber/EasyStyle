@@ -19,145 +19,145 @@ public struct TableViewStyle: StyleProtocol, ViewStyleCompatability, ScrollViewS
     public static var create: TableViewStyle { return TableViewStyle(style: { $0 }) }
     
     // MARK: TableView
-    public static func rowHeight(_ value: CGFloat) -> Style {
-        return { tableView in
+    public static func rowHeight(_ value: CGFloat) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.rowHeight = value
             return tableView
-        }
+        })
     }
     
-    public static func separatorStyle(_ value: UITableViewCellSeparatorStyle) -> Style {
-        return { tableView in
+    public static func separatorStyle(_ value: UITableViewCellSeparatorStyle) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.separatorStyle = value
             return tableView
-        }
+        })
     }
     
-    public static func separatorColor(_ value: UIColor) -> Style {
-        return { tableView in
+    public static func separatorColor(_ value: UIColor) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.separatorColor = value
             return tableView
-        }
+        })
     }
     
-    public static func separatorEffect(_ value: UIVisualEffect) -> Style {
-        return { tableView in
+    public static func separatorEffect(_ value: UIVisualEffect) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.separatorEffect = value
             return tableView
-        }
+        })
     }
     
-    public static func backgroundView(_ value: UIView) -> Style {
-        return { tableView in
+    public static func backgroundView(_ value: UIView) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.backgroundView = value
             return tableView
-        }
+        })
     }
     
-    public static func separatorInset(_ value: UIEdgeInsets) -> Style {
-        return { tableView in
+    public static func separatorInset(_ value: UIEdgeInsets) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.separatorInset = value
             return tableView
-        }
+        })
     }
     
     @available(iOS 11.0, *)
-    public static func separatorInsetReference(_ value: UITableViewSeparatorInsetReference) -> Style {
-        return { tableView in
+    public static func separatorInsetReference(_ value: UITableViewSeparatorInsetReference) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.separatorInsetReference = value
             return tableView
-        }
+        })
     }
     
-    public static func tableHeaderView(_ value: UIView) -> Style {
-        return { tableView in
+    public static func tableHeaderView(_ value: UIView) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.tableHeaderView = value
             return tableView
-        }
+        })
     }
     
-    public static func tableFooterView(_ value: UIView) -> Style {
-        return { tableView in
+    public static func tableFooterView(_ value: UIView) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.tableFooterView = value
             return tableView
-        }
+        })
     }
     
-    public static func sectionHeaderHeight(_ value: CGFloat) -> Style {
-        return { tableView in
+    public static func sectionHeaderHeight(_ value: CGFloat) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.sectionHeaderHeight = value
             return tableView
-        }
+        })
     }
     
-    public static func sectionFooterHeight(_ value: CGFloat) -> Style {
-        return { tableView in
+    public static func sectionFooterHeight(_ value: CGFloat) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.sectionFooterHeight = value
             return tableView
-        }
+        })
     }
     
-    public static func estimatedRowHeight(_ value: CGFloat) -> Style {
-        return { tableView in
+    public static func estimatedRowHeight(_ value: CGFloat) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.estimatedRowHeight = value
             return tableView
-        }
+        })
     }
     
-    public static func estimatedSectionHeaderHeight(_ value: CGFloat) -> Style {
-        return { tableView in
+    public static func estimatedSectionHeaderHeight(_ value: CGFloat) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.estimatedSectionHeaderHeight = value
             return tableView
-        }
+        })
     }
     
-    public static func estimatedSectionFooterHeight(_ value: CGFloat) -> Style {
-        return { tableView in
+    public static func estimatedSectionFooterHeight(_ value: CGFloat) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.estimatedSectionFooterHeight = value
             return tableView
-        }
+        })
     }
     
-    public static func allowsSelection(_ value: Bool) -> Style {
-        return { tableView in
+    public static func allowsSelection(_ value: Bool) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.allowsSelection = value
             return tableView
-        }
+        })
     }
     
-    public static func allowsMultipleSelection(_ value: Bool) -> Style {
-        return { tableView in
+    public static func allowsMultipleSelection(_ value: Bool) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.allowsMultipleSelection = value
             return tableView
-        }
+        })
     }
     
-    public static func allowsSelectionDuringEditing(_ value: Bool) -> Style {
-        return { tableView in
+    public static func allowsSelectionDuringEditing(_ value: Bool) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.allowsSelectionDuringEditing = value
             return tableView
-        }
+        })
     }
     
-    public static func allowsMultipleSelectionDuringEditing(_ value: Bool) -> Style {
-        return { tableView in
+    public static func allowsMultipleSelectionDuringEditing(_ value: Bool) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.allowsMultipleSelectionDuringEditing = value
             return tableView
-        }
+        })
     }
     
-    public static func sectionIndexMinimumDisplayRowCount(_ value: Int) -> Style {
-        return { tableView in
+    public static func sectionIndexMinimumDisplayRowCount(_ value: Int) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.sectionIndexMinimumDisplayRowCount = value
             return tableView
-        }
+        })
     }
     
     @available(iOS 11.0, *)
-    public static func insetsContentViewsToSafeArea(_ value: Bool) -> Style {
-        return { tableView in
+    public static func insetsContentViewsToSafeArea(_ value: Bool) -> TableViewStyle {
+        return  TableViewStyle(style: { tableView in
             tableView.insetsContentViewsToSafeArea = value
             return tableView
-        }
+        })
     }
 }

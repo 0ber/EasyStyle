@@ -24,38 +24,38 @@ public struct ControlStyle: StyleProtocol, ControlStyleCompatability, ViewStyleC
 extension ControlStyleCompatability where Self: StyleProtocol, Self.ViewType: UIControl {
     
     // MARK: UIControl
-    public static func isEnabled(_ value: Bool) -> Style {
-        return { contol in
+    public static func isEnabled(_ value: Bool) -> Self {
+        return Self.init(style: { contol in
             contol.isEnabled = value
             return contol
-        }
+        })
     }
     
-    public static func isSelected(_ value: Bool) -> Style {
-        return { contol in
+    public static func isSelected(_ value: Bool) -> Self {
+        return Self.init(style: { contol in
             contol.isSelected = value
             return contol
-        }
+        })
     }
     
-    public static func isHighlighted(_ value: Bool) -> Style {
-        return { contol in
+    public static func isHighlighted(_ value: Bool) -> Self {
+        return Self.init(style: { contol in
             contol.isHighlighted = value
             return contol
-        }
+        })
     }
     
-    public static func contentVerticalAlignment(_ value: UIControlContentVerticalAlignment) -> Style {
-        return { contol in
+    public static func contentVerticalAlignment(_ value: UIControlContentVerticalAlignment) -> Self {
+        return Self.init(style: { contol in
             contol.contentVerticalAlignment = value
             return contol
-        }
+        })
     }
     
-    public static func contentHorizontalAlignment(_ value: UIControlContentHorizontalAlignment) -> Style {
-        return { contol in
+    public static func contentHorizontalAlignment(_ value: UIControlContentHorizontalAlignment) -> Self {
+        return Self.init(style: { contol in
             contol.contentHorizontalAlignment = value
             return contol
-        }
+        })
     }
 }

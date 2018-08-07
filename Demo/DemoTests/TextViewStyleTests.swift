@@ -19,18 +19,16 @@ class TextViewStyleTests: XCTestCase {
     func testCreateViewStyle() {
         
         let style = TextViewStyle.backgroundColor(.red)
-        let textViewStyle = TextViewStyle(style: style)
-        
-        XCTAssertNotNil(textViewStyle.style)
+
+        XCTAssertNotNil(style.style)
     }
     
     func testText() {
         let text = "some text"
         
         let style = TextViewStyle.text(text)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         XCTAssertEqual(textView.text, text)
     }
@@ -39,9 +37,8 @@ class TextViewStyleTests: XCTestCase {
         let text = NSAttributedString(string: "some text")
         
         let style = TextViewStyle.attributedText(text)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         XCTAssertEqual(textView.attributedText.string, text.string)
     }
@@ -50,9 +47,8 @@ class TextViewStyleTests: XCTestCase {
         let font = UIFont.systemFont(ofSize: 12)
         
         let style = TextViewStyle.font(font)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         XCTAssertEqual(textView.font, font)
     }
@@ -61,9 +57,8 @@ class TextViewStyleTests: XCTestCase {
         let textColor = UIColor.red
         
         let style = TextViewStyle.textColor(textColor)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         XCTAssertEqual(textView.textColor, textColor)
     }
@@ -72,9 +67,8 @@ class TextViewStyleTests: XCTestCase {
         let isEditable = false
         
         let style = TextViewStyle.isEditable(isEditable)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         XCTAssertEqual(textView.isEditable, isEditable)
     }
@@ -83,9 +77,8 @@ class TextViewStyleTests: XCTestCase {
         let allowsEditingTextAttributes = true
         
         let style = TextViewStyle.allowsEditingTextAttributes(allowsEditingTextAttributes)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         XCTAssertEqual(textView.allowsEditingTextAttributes, allowsEditingTextAttributes)
     }
@@ -94,9 +87,8 @@ class TextViewStyleTests: XCTestCase {
         let dataDetectorTypes = UIDataDetectorTypes.all
         
         let style = TextViewStyle.dataDetectorTypes(dataDetectorTypes)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         XCTAssertEqual(textView.dataDetectorTypes, dataDetectorTypes)
     }
@@ -105,9 +97,8 @@ class TextViewStyleTests: XCTestCase {
         let textAlignment = NSTextAlignment.center
         
         let style = TextViewStyle.textAlignment(textAlignment)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         XCTAssertEqual(textView.textAlignment, textAlignment)
     }
@@ -117,9 +108,8 @@ class TextViewStyleTests: XCTestCase {
         let typingAttributes = [NSAttributedStringKey.foregroundColor.rawValue: color]
         
         let style = TextViewStyle.typingAttributes(typingAttributes)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         let returnColor = textView.typingAttributes[NSAttributedStringKey.foregroundColor.rawValue] as? UIColor
         
@@ -131,9 +121,8 @@ class TextViewStyleTests: XCTestCase {
         let linkTextAttributes = [NSAttributedStringKey.foregroundColor.rawValue: color]
         
         let style = TextViewStyle.linkTextAttributes(linkTextAttributes)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         let returnColor = textView.linkTextAttributes[NSAttributedStringKey.foregroundColor.rawValue] as? UIColor
         
@@ -144,9 +133,8 @@ class TextViewStyleTests: XCTestCase {
         let textContainerInset = UIEdgeInsets(top: 1, left: 2, bottom: 3, right: 4)
         
         let style = TextViewStyle.textContainerInset(textContainerInset)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         XCTAssertEqual(textView.textContainerInset, textContainerInset)
     }
@@ -155,10 +143,9 @@ class TextViewStyleTests: XCTestCase {
         let selectedRange = NSRange(location: 1, length: 2)
         
         let style = TextViewStyle.selectedRange(selectedRange)
-        let viewStyle = TextViewStyle(style: style)
         textView.text = "some text"
         
-        textView.setStyle(viewStyle)
+        textView.setStyle(style)
         
         XCTAssertEqual(textView.selectedRange, selectedRange)
     }
@@ -167,9 +154,8 @@ class TextViewStyleTests: XCTestCase {
         let clearsOnInsertion = true
         
         let style = TextViewStyle.clearsOnInsertion(clearsOnInsertion)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         XCTAssertEqual(textView.clearsOnInsertion, clearsOnInsertion)
     }
@@ -178,9 +164,8 @@ class TextViewStyleTests: XCTestCase {
         let isSelectable = false
         
         let style = TextViewStyle.isSelectable(isSelectable)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         XCTAssertEqual(textView.isSelectable, isSelectable)
     }
@@ -190,9 +175,8 @@ class TextViewStyleTests: XCTestCase {
         inputView.tag = 11
         
         let style = TextViewStyle.inputView(inputView)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         XCTAssertEqual(textView.inputView?.tag, inputView.tag)
     }
@@ -202,9 +186,8 @@ class TextViewStyleTests: XCTestCase {
         inputAccessoryView.tag = 11
         
         let style = TextViewStyle.inputAccessoryView(inputAccessoryView)
-        let viewStyle = TextViewStyle(style: style)
-        
-        textView.setStyle(viewStyle)
+
+        textView.setStyle(style)
         
         XCTAssertEqual(textView.inputAccessoryView?.tag, inputAccessoryView.tag)
     }

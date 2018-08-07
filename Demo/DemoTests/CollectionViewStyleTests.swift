@@ -17,18 +17,15 @@ class CollectionViewStyleTests: XCTestCase {
     func testCreateCollectionViewStyle() {
         
         let style = CollectionViewStyle.backgroundColor(.red)
-        let collectionViewStyle = CollectionViewStyle(style: style)
-        
-        XCTAssertNotNil(collectionViewStyle.style)
+
+        XCTAssertNotNil(style.style)
     }
     
     func testBackgroundView() {
         let backgroundView = UIView()
         
         let style = CollectionViewStyle.backgroundView(backgroundView)
-        let collectionStyle = CollectionViewStyle(style: style)
-        
-        collectionView.setStyle(collectionStyle)
+        collectionView.setStyle(style)
         
         XCTAssertEqual(collectionView.backgroundView, backgroundView)
     }
@@ -37,9 +34,7 @@ class CollectionViewStyleTests: XCTestCase {
         let isPrefetchingEnabled = false
         
         let style = CollectionViewStyle.isPrefetchingEnabled(isPrefetchingEnabled)
-        let collectionStyle = CollectionViewStyle(style: style)
-        
-        collectionView.setStyle(collectionStyle)
+        collectionView.setStyle(style)
         
         XCTAssertEqual(collectionView.isPrefetchingEnabled, isPrefetchingEnabled)
     }
@@ -48,9 +43,7 @@ class CollectionViewStyleTests: XCTestCase {
         let dragInteractionEnabled = false
         
         let style = CollectionViewStyle.dragInteractionEnabled(dragInteractionEnabled)
-        let collectionStyle = CollectionViewStyle(style: style)
-        
-        collectionView.setStyle(collectionStyle)
+        collectionView.setStyle(style)
         
         XCTAssertEqual(collectionView.dragInteractionEnabled, dragInteractionEnabled)
     }
@@ -59,9 +52,7 @@ class CollectionViewStyleTests: XCTestCase {
         let allowsSelection = false
         
         let style = CollectionViewStyle.allowsSelection(allowsSelection)
-        let collectionStyle = CollectionViewStyle(style: style)
-        
-        collectionView.setStyle(collectionStyle)
+        collectionView.setStyle(style)
         
         XCTAssertEqual(collectionView.allowsSelection, allowsSelection)
     }
@@ -70,9 +61,7 @@ class CollectionViewStyleTests: XCTestCase {
         let allowsMultipleSelection = false
         
         let style = CollectionViewStyle.allowsMultipleSelection(allowsMultipleSelection)
-        let collectionStyle = CollectionViewStyle(style: style)
-        
-        collectionView.setStyle(collectionStyle)
+        collectionView.setStyle(style)
         
         XCTAssertEqual(collectionView.allowsMultipleSelection, allowsMultipleSelection)
     }

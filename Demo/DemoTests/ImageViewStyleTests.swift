@@ -16,18 +16,17 @@ class ImageViewStyleTests: XCTestCase {
     func testCreateImageViewStyle() {
         
         let style = ImageViewStyle.backgroundColor(.red)
-        let imageViewStyle = ImageViewStyle(style: style)
-        
-        XCTAssertNotNil(imageViewStyle.style)
+
+        XCTAssertNotNil(style.style)
     }
     
     func testImage() {
         let image = UIImage()
         
         let style = ImageViewStyle.image(image)
-        let imageViewStyle = ImageViewStyle(style: style)
+
         
-        imageView.setStyle(imageViewStyle)
+        imageView.setStyle(style)
         
         XCTAssertEqual(imageView.image, image)
     }
@@ -36,9 +35,9 @@ class ImageViewStyleTests: XCTestCase {
         let highlightedImage = UIImage()
         
         let style = ImageViewStyle.highlightedImage(highlightedImage)
-        let imageViewStyle = ImageViewStyle(style: style)
+
         
-        imageView.setStyle(imageViewStyle)
+        imageView.setStyle(style)
         
         XCTAssertEqual(imageView.highlightedImage, highlightedImage)
     }
@@ -47,9 +46,9 @@ class ImageViewStyleTests: XCTestCase {
         let animationImages = [UIImage()]
         
         let style = ImageViewStyle.animationImages(animationImages)
-        let imageViewStyle = ImageViewStyle(style: style)
+
         
-        imageView.setStyle(imageViewStyle)
+        imageView.setStyle(style)
         
         XCTAssertEqual(imageView.animationImages, animationImages)
     }
@@ -58,9 +57,9 @@ class ImageViewStyleTests: XCTestCase {
         let highlightedAnimationImages = [UIImage()]
         
         let style = ImageViewStyle.highlightedAnimationImages(highlightedAnimationImages)
-        let imageViewStyle = ImageViewStyle(style: style)
+
         
-        imageView.setStyle(imageViewStyle)
+        imageView.setStyle(style)
         
         XCTAssertEqual(imageView.highlightedAnimationImages, highlightedAnimationImages)
     }
@@ -69,9 +68,9 @@ class ImageViewStyleTests: XCTestCase {
         let animationDuration: TimeInterval = 3.33
         
         let style = ImageViewStyle.animationDuration(animationDuration)
-        let imageViewStyle = ImageViewStyle(style: style)
+
         
-        imageView.setStyle(imageViewStyle)
+        imageView.setStyle(style)
         
         XCTAssertEqual(imageView.animationDuration, animationDuration)
     }
@@ -80,9 +79,9 @@ class ImageViewStyleTests: XCTestCase {
         let animationRepeatCount = 8
         
         let style = ImageViewStyle.animationRepeatCount(animationRepeatCount)
-        let imageViewStyle = ImageViewStyle(style: style)
+
         
-        imageView.setStyle(imageViewStyle)
+        imageView.setStyle(style)
         
         XCTAssertEqual(imageView.animationRepeatCount, animationRepeatCount)
     }
@@ -91,9 +90,9 @@ class ImageViewStyleTests: XCTestCase {
         let isUserInteractionEnabled = true
         
         let style = ImageViewStyle.isUserInteractionEnabled(isUserInteractionEnabled)
-        let imageViewStyle = ImageViewStyle(style: style)
+
         
-        imageView.setStyle(imageViewStyle)
+        imageView.setStyle(style)
         
         XCTAssertEqual(imageView.isUserInteractionEnabled, isUserInteractionEnabled)
     }
@@ -102,9 +101,9 @@ class ImageViewStyleTests: XCTestCase {
         let tintColor = UIColor.red
         
         let style = ImageViewStyle.tintColor(tintColor)
-        let imageViewStyle = ImageViewStyle(style: style)
+
         
-        imageView.setStyle(imageViewStyle)
+        imageView.setStyle(style)
         
         XCTAssertEqual(imageView.tintColor, tintColor)
     }

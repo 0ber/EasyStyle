@@ -18,18 +18,16 @@ class ScrollViewStyleTests: XCTestCase {
     func testCreateScrollViewStyle() {
         
         let style = ScrollViewStyle.backgroundColor(.red)
-        let scrollViewStyle = ScrollViewStyle(style: style)
-        
-        XCTAssertNotNil(scrollViewStyle.style)
+
+        XCTAssertNotNil(style.style)
     }
     
     func testContentSize() {
         let contentSize = CGSize(width: 10, height: 14)
         
         let style = ScrollViewStyle.contentSize(contentSize)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.contentSize, contentSize)
     }
@@ -38,9 +36,8 @@ class ScrollViewStyleTests: XCTestCase {
         let contentOffset = CGPoint(x: 2, y: 5)
         
         let style = ScrollViewStyle.contentOffset(contentOffset)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.contentOffset, contentOffset)
     }
@@ -49,9 +46,8 @@ class ScrollViewStyleTests: XCTestCase {
         let contentInset = UIEdgeInsets(top: 1, left: 2, bottom: 3, right: 4)
         
         let style = ScrollViewStyle.contentInset(contentInset)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.contentInset, contentInset)
     }
@@ -60,9 +56,8 @@ class ScrollViewStyleTests: XCTestCase {
         let contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentBehavior.always
         
         let style = ScrollViewStyle.contentInsetAdjustmentBehavior(contentInsetAdjustmentBehavior)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.contentInsetAdjustmentBehavior, contentInsetAdjustmentBehavior)
     }
@@ -71,9 +66,8 @@ class ScrollViewStyleTests: XCTestCase {
         let isScrollEnabled = false
         
         let style = ScrollViewStyle.isScrollEnabled(isScrollEnabled)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.isScrollEnabled, isScrollEnabled)
     }
@@ -82,9 +76,8 @@ class ScrollViewStyleTests: XCTestCase {
         let isDirectionalLockEnabled = true
         
         let style = ScrollViewStyle.isDirectionalLockEnabled(isDirectionalLockEnabled)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.isDirectionalLockEnabled, isDirectionalLockEnabled)
     }
@@ -93,9 +86,8 @@ class ScrollViewStyleTests: XCTestCase {
         let isPagingEnabled = true
         
         let style = ScrollViewStyle.isPagingEnabled(isPagingEnabled)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.isPagingEnabled, isPagingEnabled)
     }
@@ -104,9 +96,8 @@ class ScrollViewStyleTests: XCTestCase {
         let scrollsToTop = false
         
         let style = ScrollViewStyle.scrollsToTop(scrollsToTop)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.scrollsToTop, scrollsToTop)
     }
@@ -115,9 +106,8 @@ class ScrollViewStyleTests: XCTestCase {
         let bounces = false
         
         let style = ScrollViewStyle.bounces(bounces)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.bounces, bounces)
     }
@@ -126,9 +116,8 @@ class ScrollViewStyleTests: XCTestCase {
         let alwaysBounceVertical = true
         
         let style = ScrollViewStyle.alwaysBounceVertical(alwaysBounceVertical)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.alwaysBounceVertical, alwaysBounceVertical)
     }
@@ -137,9 +126,8 @@ class ScrollViewStyleTests: XCTestCase {
         let alwaysBounceHorizontal = true
         
         let style = ScrollViewStyle.alwaysBounceHorizontal(alwaysBounceHorizontal)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.alwaysBounceHorizontal, alwaysBounceHorizontal)
     }
@@ -148,9 +136,8 @@ class ScrollViewStyleTests: XCTestCase {
         let decelerationRate: CGFloat =  UIScrollViewDecelerationRateFast
         
         let style = ScrollViewStyle.decelerationRate(decelerationRate)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.decelerationRate, decelerationRate)
     }
@@ -159,9 +146,8 @@ class ScrollViewStyleTests: XCTestCase {
         let indicatorStyle = UIScrollViewIndicatorStyle.black
         
         let style = ScrollViewStyle.indicatorStyle(indicatorStyle)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.indicatorStyle, indicatorStyle)
     }
@@ -170,9 +156,8 @@ class ScrollViewStyleTests: XCTestCase {
         let scrollIndicatorInsets = UIEdgeInsets(top: 1, left: 2, bottom: 3, right: 4)
         
         let style = ScrollViewStyle.scrollIndicatorInsets(scrollIndicatorInsets)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.scrollIndicatorInsets, scrollIndicatorInsets)
     }
@@ -181,9 +166,8 @@ class ScrollViewStyleTests: XCTestCase {
         let showsHorizontalScrollIndicator = false
         
         let style = ScrollViewStyle.showsHorizontalScrollIndicator(showsHorizontalScrollIndicator)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.showsHorizontalScrollIndicator, showsHorizontalScrollIndicator)
     }
@@ -192,9 +176,8 @@ class ScrollViewStyleTests: XCTestCase {
         let showsVerticalScrollIndicator = false
         
         let style = ScrollViewStyle.showsVerticalScrollIndicator(showsVerticalScrollIndicator)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.showsVerticalScrollIndicator, showsVerticalScrollIndicator)
     }
@@ -203,9 +186,8 @@ class ScrollViewStyleTests: XCTestCase {
         let refreshControl = UIRefreshControl()
         
         let style = ScrollViewStyle.refreshControl(refreshControl)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.refreshControl, refreshControl)
     }
@@ -214,9 +196,8 @@ class ScrollViewStyleTests: XCTestCase {
         let canCancelContentTouches = false
         
         let style = ScrollViewStyle.canCancelContentTouches(canCancelContentTouches)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.canCancelContentTouches, canCancelContentTouches)
     }
@@ -225,9 +206,8 @@ class ScrollViewStyleTests: XCTestCase {
         let delaysContentTouches = false
         
         let style = ScrollViewStyle.delaysContentTouches(delaysContentTouches)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.delaysContentTouches, delaysContentTouches)
     }
@@ -236,9 +216,8 @@ class ScrollViewStyleTests: XCTestCase {
         let maximumZoomScale: CGFloat = 2.2
 
         let style = ScrollViewStyle.maximumZoomScale(maximumZoomScale)
-        let viewStyle = ScrollViewStyle(style: style)
 
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
 
         XCTAssertEqual(scrollView.maximumZoomScale, maximumZoomScale)
     }
@@ -247,9 +226,8 @@ class ScrollViewStyleTests: XCTestCase {
         let minimumZoomScale: CGFloat = 2.2
         
         let style = ScrollViewStyle.minimumZoomScale(minimumZoomScale)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.minimumZoomScale, minimumZoomScale)
     }
@@ -258,9 +236,8 @@ class ScrollViewStyleTests: XCTestCase {
         let bouncesZoom = false
         
         let style = ScrollViewStyle.bouncesZoom(bouncesZoom)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.bouncesZoom, bouncesZoom)
     }
@@ -269,9 +246,8 @@ class ScrollViewStyleTests: XCTestCase {
         let keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
         
         let style = ScrollViewStyle.keyboardDismissMode(keyboardDismissMode)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.keyboardDismissMode, keyboardDismissMode)
     }
@@ -280,9 +256,8 @@ class ScrollViewStyleTests: XCTestCase {
         let indexDisplayMode = UIScrollViewIndexDisplayMode.alwaysHidden
         
         let style = ScrollViewStyle.indexDisplayMode(indexDisplayMode)
-        let viewStyle = ScrollViewStyle(style: style)
         
-        scrollView.setStyle(viewStyle)
+        scrollView.setStyle(style)
         
         XCTAssertEqual(scrollView.indexDisplayMode, indexDisplayMode)
     }
