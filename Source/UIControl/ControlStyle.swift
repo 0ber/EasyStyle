@@ -17,8 +17,6 @@ public struct ControlStyle: StyleProtocol, ControlStyleCompatability, ViewStyleC
     public init(style: @escaping Style) {
         self.style = style
     }
-    
-    public static var create: ControlStyle { return ControlStyle(style: { $0 }) }
 }
     
 extension ControlStyleCompatability where Self: StyleProtocol, Self.ViewType: UIControl {

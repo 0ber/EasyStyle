@@ -16,8 +16,6 @@ public struct LabelStyle: StyleProtocol, ViewStyleCompatability {
         self.style = style
     }
 
-    public static var create: LabelStyle { return LabelStyle(style: { $0 }) }
-    
     // MARK: UILabel methods
     public static func text(_ value: String) -> LabelStyle {
         return LabelStyle(style: { label in

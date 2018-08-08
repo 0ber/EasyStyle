@@ -16,8 +16,6 @@ public struct TextFieldStyle: StyleProtocol, ControlStyleCompatability, ViewStyl
         self.style = style
     }
     
-    public static var create: TextFieldStyle { return TextFieldStyle(style: { $0 }) }
-    
     // MARK: TextField
     public static func text(_ value: String)  -> TextFieldStyle {
         return TextFieldStyle(style: { textField in

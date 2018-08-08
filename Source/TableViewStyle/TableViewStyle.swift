@@ -16,8 +16,6 @@ public struct TableViewStyle: StyleProtocol, ViewStyleCompatability, ScrollViewS
         self.style = style
     }
     
-    public static var create: TableViewStyle { return TableViewStyle(style: { $0 }) }
-    
     // MARK: TableView
     public static func rowHeight(_ value: CGFloat) -> TableViewStyle {
         return  TableViewStyle(style: { tableView in

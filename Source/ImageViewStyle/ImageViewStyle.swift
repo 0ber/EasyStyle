@@ -16,8 +16,6 @@ public struct ImageViewStyle: StyleProtocol, ViewStyleCompatability {
         self.style = style
     }
     
-    public static var create: ImageViewStyle { return ImageViewStyle(style: { $0 }) }
-    
     // MARK: ImageView
     
     public static func image(_ value: UIImage) -> ImageViewStyle {

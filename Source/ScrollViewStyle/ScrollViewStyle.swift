@@ -18,8 +18,6 @@ public struct ScrollViewStyle: StyleProtocol, ViewStyleCompatability, ScrollView
     public init(style: @escaping Style) {
         self.style = style
     }
-    
-    public static var create: ScrollViewStyle { return ScrollViewStyle(style: { $0 }) }
 }
 
 extension ScrollViewStyleCompatability where Self: StyleProtocol, Self.ViewType: UIScrollView {

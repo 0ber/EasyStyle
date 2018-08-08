@@ -15,8 +15,6 @@ public struct ButtonStyle: StyleProtocol, ControlStyleCompatability, ViewStyleCo
         self.style = style
     }
     
-    public static var create: ButtonStyle { return ButtonStyle(style: {  $0 }) }
-    
     // MARK: UIButton methods
     public static func title(_ value: String, _ state: UIControlState) -> ButtonStyle {
         return ButtonStyle(style: { button in

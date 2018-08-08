@@ -16,8 +16,6 @@ public struct TextViewStyle: StyleProtocol, ViewStyleCompatability, ScrollViewSt
         self.style = style
     }
     
-    public static var create: TextViewStyle { return TextViewStyle(style: { $0 }) }
-    
     // MARK: UITextView
     
     public static func text(_ value: String) -> TextViewStyle {

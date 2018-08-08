@@ -17,8 +17,6 @@ public struct ViewStyle: StyleProtocol, ViewStyleCompatability {
     public init(style: @escaping Style) {
         self.style = style
     }
-    
-    public static var create: ViewStyle { return ViewStyle(style: { $0 }) }
 }
 
 extension ViewStyleCompatability where Self: StyleProtocol, Self.ViewType: UIView {

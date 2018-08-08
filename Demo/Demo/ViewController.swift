@@ -48,12 +48,6 @@ class ViewController: UIViewController {
     }
 }
 
-let logOutButton = UIButton()
-logOutButton.setStyle(.logOut) // set style
-
-let logInButton = UIButton()
-logInButton.setStyle(.logIn) // set style
-
 // MARK: Button Style
 extension ButtonStyle {
     

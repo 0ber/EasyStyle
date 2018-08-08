@@ -16,8 +16,6 @@ public struct CollectionViewStyle: StyleProtocol, ViewStyleCompatability, Scroll
         self.style = style
     }
     
-    public static var create: CollectionViewStyle { return CollectionViewStyle(style: { $0 }) }
-    
     // MARK: UICollectionView
     
     public static func backgroundView(_ value: UIView) -> CollectionViewStyle {
