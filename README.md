@@ -1,7 +1,14 @@
 <p align="center"><img src="EasyStyleIcon.png"></a>
 
-**EasyStyle** is a Swift framework that lets you create UI styles programmatically inspired by
+**EasyStyle** is a Swift functional framework that lets you create UI styles programmatically inspired by
 [Composable, type-safe UIView styling with Swift functions]( https://medium.cobeisfresh.com/composable-type-safe-uiview-styling-with-swift-functions-8be417da947f)
+
+
+<p align="center">
+<img src="https://img.shields.io/cocoapods/v/EasyStyle.svg?label=version">
+<img src="https://img.shields.io/badge/supports-CocoaPods%20%7C%20Carthage-green.svg">
+<img src="https://img.shields.io/badge/platforms-iOS%20%7C%-lightgrey.svg">
+</p>
 
 ### Easy to use
 The example below is quite simple but shows how compose styles
