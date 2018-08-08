@@ -7,7 +7,7 @@
 <p align="center">
 <img src="https://img.shields.io/cocoapods/v/EasyStyle.svg?label=version">
 <img src="https://img.shields.io/badge/supports-CocoaPods%20%7C%20Carthage-green.svg">
-<img src="https://img.shields.io/badge/platforms-iOS%20%7C%-lightgrey.svg">
+<img src="https://img.shields.io/badge/platforms-iOS-lightgrey.svg">
 </p>
 
 ### Easy to use
