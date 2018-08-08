@@ -8,19 +8,7 @@ The example below is quite simple but shows how compose styles
 
 | Result | Code |
 | --- | --- |
-| <p align="center"><img src="Example.png"></a> | <p align="center"><img src="CodeExample.png"></a>
-```swift
-// MARK: Label Style
-  extension LabelStyle {
-
-    // style components
-    private static let h1 = font(.systemFont(ofSize: 28))
-    private static let title = h1 + textColor(.red)) + aligment(.center)
-
-    // create style
-    static let easyStyle = LabelStyle.create <<< title + text("Easy Style")
-  }
-``` |
+| <p align="center"><img src="Example.png"></a> | <p align="center"><img src="CodeExample.png"></a>|
 
 ### Features
 * Lightweight and easy to use
@@ -51,12 +39,10 @@ At first crate a style for UILabel
 // MARK: Label Style
   extension LabelStyle {
 
-    // style components
     private static let h1 = font(.systemFont(ofSize: 28))
     private static let title = h1 + textColor(.red)) + aligment(.center)
 
-    // create style
-    static let easyStyle = LabelStyle.create <<< title + text("Easy Style")
+    static let easyStyle = title + text("Easy Style")
   }
 ```
 
