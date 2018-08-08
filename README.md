@@ -1,7 +1,8 @@
 <p align="center"><img src="EasyStyleIcon.png"></a>
 
 **EasyStyle** is a Swift functional framework that lets you create UI styles programmatically inspired by
-[Composable, type-safe UIView styling with Swift functions]( https://medium.cobeisfresh.com/composable-type-safe-uiview-styling-with-swift-functions-8be417da947f)
+[Composable, type-safe UIView styling with Swift functions]( https://medium.cobeisfresh.com/composable-type-safe-uiview-styling-with-swift-functions-8be417da947f) and
+[UIKit Styling with Functions](https://www.pointfree.co/episodes/ep3-uikit-styling-with-functions)
 
 
 <p align="center">
