@@ -33,9 +33,9 @@ class ControlStyleTests: XCTestCase {
     }
     
     func testIsSelected() {
-        let isSelected = false
+        let isSelected = true
         
-        let style = ControlStyle.isEnabled(isSelected)
+        let style = ControlStyle.isSelected(isSelected)
 
         control.setStyle(style)
         
@@ -43,9 +43,9 @@ class ControlStyleTests: XCTestCase {
     }
     
     func testIsHighlighted() {
-        let isHighlighted = false
+        let isHighlighted = true
         
-        let style = ControlStyle.isEnabled(isHighlighted)
+        let style = ControlStyle.isHighlighted(isHighlighted)
 
         control.setStyle(style)
         

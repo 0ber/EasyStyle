@@ -36,20 +36,9 @@ public protocol StyleProtocol {
 }
 
 // MARK: Operators
-public func +<T>(f1: @escaping (T) -> T, f2: @escaping (T) -> T) -> (T) -> T {
-    return { label in f2(f1(label)) }
-}
 
 public func +<View: StyleProtocol>(l1: View, l2: View) -> View {
     return View(style: { label in
         return l2.style(l1.style(label))
     })
 }
-
-infix operator <<<: AssignmentPrecedence
-public func <<<<View: StyleProtocol>(style: View, f2: @escaping (View.ViewType) -> View.ViewType) -> View {
-    return View(style: { label in
-        return f2(style.style(label))
-    })
-}
-

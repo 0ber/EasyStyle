@@ -97,6 +97,16 @@ class ImageViewStyleTests: XCTestCase {
         XCTAssertEqual(imageView.isUserInteractionEnabled, isUserInteractionEnabled)
     }
     
+    func testIsHighlighted() {
+        let isHighlighted = true
+        
+        let style = ImageViewStyle.isHighlighted(isHighlighted)
+
+        imageView.setStyle(style)
+        
+        XCTAssertEqual(imageView.isHighlighted, isHighlighted)
+    }
+    
     func testTintColor() {
         let tintColor = UIColor.red
         

@@ -107,13 +107,6 @@ extension ViewStyleCompatability where Self: StyleProtocol, Self.ViewType: UIVie
         })
     }
     
-    public static func styleCornerRadius(_ value: CGFloat) -> Self {
-        return Self.init(style: { view in
-            view.layer.cornerRadius = value
-            return view
-        })
-    }
-    
     public static func cornerRadius(_ value: CGFloat) -> Self {
         return Self.init(style: { view in
             view.layer.cornerRadius = value
