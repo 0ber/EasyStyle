@@ -46,7 +46,7 @@ extension ScrollViewStyleCompatability where Self: StyleProtocol, Self.ViewType:
     }
     
     @available(iOS 11.0, *)
-    public static func contentInsetAdjustmentBehavior(_ value: UIScrollViewContentInsetAdjustmentBehavior) -> ScrollViewStyle {
+    public static func contentInsetAdjustmentBehavior(_ value: UIScrollView.ContentInsetAdjustmentBehavior) -> ScrollViewStyle {
         return ScrollViewStyle(style:  { scrollView in
             scrollView.contentInsetAdjustmentBehavior = value
             return scrollView
@@ -102,14 +102,14 @@ extension ScrollViewStyleCompatability where Self: StyleProtocol, Self.ViewType:
         })
     }
     
-    public static func decelerationRate(_ value: CGFloat) -> ScrollViewStyle {
+    public static func decelerationRate(_ value: UIScrollView.DecelerationRate) -> ScrollViewStyle {
         return ScrollViewStyle(style:  { scrollView in
             scrollView.decelerationRate = value
             return scrollView
         })
     }
     
-    public static func indicatorStyle(_ value: UIScrollViewIndicatorStyle) -> ScrollViewStyle {
+    public static func indicatorStyle(_ value: UIScrollView.IndicatorStyle) -> ScrollViewStyle {
         return ScrollViewStyle(style:  { scrollView in
             scrollView.indicatorStyle = value
             return scrollView
@@ -186,14 +186,14 @@ extension ScrollViewStyleCompatability where Self: StyleProtocol, Self.ViewType:
         })
     }
     
-    public static func keyboardDismissMode(_ value: UIScrollViewKeyboardDismissMode) -> ScrollViewStyle {
+    public static func keyboardDismissMode(_ value: UIScrollView.KeyboardDismissMode) -> ScrollViewStyle {
         return ScrollViewStyle(style:  { scrollView in
             scrollView.keyboardDismissMode = value
             return scrollView
         })
     }
     
-    public static func indexDisplayMode(_ value: UIScrollViewIndexDisplayMode) -> ScrollViewStyle {
+    public static func indexDisplayMode(_ value: UIScrollView.IndexDisplayMode) -> ScrollViewStyle {
         return ScrollViewStyle(style:  { scrollView in
             scrollView.indexDisplayMode = value
             return scrollView

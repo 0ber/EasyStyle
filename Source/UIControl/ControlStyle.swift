@@ -43,14 +43,14 @@ extension ControlStyleCompatability where Self: StyleProtocol, Self.ViewType: UI
         })
     }
     
-    public static func contentVerticalAlignment(_ value: UIControlContentVerticalAlignment) -> Self {
+    public static func contentVerticalAlignment(_ value: UIControl.ContentVerticalAlignment) -> Self {
         return Self.init(style: { contol in
             contol.contentVerticalAlignment = value
             return contol
         })
     }
     
-    public static func contentHorizontalAlignment(_ value: UIControlContentHorizontalAlignment) -> Self {
+    public static func contentHorizontalAlignment(_ value: UIControl.ContentHorizontalAlignment) -> Self {
         return Self.init(style: { contol in
             contol.contentHorizontalAlignment = value
             return contol

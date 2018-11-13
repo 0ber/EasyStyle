@@ -68,14 +68,13 @@ class TextFieldStyleTests: XCTestCase {
     
     func testDefaultTextAttributes() {
         let color = UIColor.red
-        let defaultTextAttributes = [NSAttributedStringKey.foregroundColor.rawValue: color]
+        let defaultTextAttributes = [NSAttributedString.Key.foregroundColor: color]
 
         let style = TextFieldStyle.defaultTextAttributes(defaultTextAttributes)
-         
 
         textField.setStyle(style)
 
-        let returnColor = textField.defaultTextAttributes[NSAttributedStringKey.foregroundColor.rawValue] as? UIColor
+        let returnColor = convertFromNSAttributedStringKeyDictionary(textField.defaultTextAttributes)[NSAttributedString.Key.foregroundColor.rawValue] as? UIColor
 
         XCTAssertEqual(returnColor, color)
     }
@@ -169,7 +168,7 @@ class TextFieldStyleTests: XCTestCase {
     }
     
     func testBorderStyle() {
-        let borderStyle = UITextBorderStyle.bezel
+        let borderStyle = UITextField.BorderStyle.bezel
         
         let style = TextFieldStyle.borderStyle(borderStyle)
          
@@ -202,7 +201,7 @@ class TextFieldStyleTests: XCTestCase {
     }
     
     func testClearButtonMode() {
-        let clearButtonMode = UITextFieldViewMode.always
+        let clearButtonMode = UITextField.ViewMode.always
         
         let style = TextFieldStyle.clearButtonMode(clearButtonMode)
          
@@ -224,7 +223,7 @@ class TextFieldStyleTests: XCTestCase {
     }
     
     func testLeftViewMode() {
-        let leftViewMode = UITextFieldViewMode.always
+        let leftViewMode = UITextField.ViewMode.always
         
         let style = TextFieldStyle.leftViewMode(leftViewMode)
          
@@ -246,7 +245,7 @@ class TextFieldStyleTests: XCTestCase {
     }
     
     func testRightViewMode() {
-        let rightViewMode = UITextFieldViewMode.always
+        let rightViewMode = UITextField.ViewMode.always
         
         let style = TextFieldStyle.rightViewMode(rightViewMode)
          
@@ -277,4 +276,9 @@ class TextFieldStyleTests: XCTestCase {
         
         XCTAssertEqual(textField.inputAccessoryView, inputAccessoryView)
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKeyDictionary(_ input: [NSAttributedString.Key: Any]) -> [String: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
 }

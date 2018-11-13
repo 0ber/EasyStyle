@@ -53,7 +53,7 @@ class ControlStyleTests: XCTestCase {
     }
     
     func testContentVerticalAlignment() {
-        let contentVerticalAlignment = UIControlContentVerticalAlignment.bottom
+        let contentVerticalAlignment = UIControl.ContentVerticalAlignment.bottom
         
         let style = ControlStyle.contentVerticalAlignment(contentVerticalAlignment)
 
@@ -63,7 +63,7 @@ class ControlStyleTests: XCTestCase {
     }
     
     func testContentHorizontalAlignment() {
-        let contentHorizontalAlignment = UIControlContentHorizontalAlignment.center
+        let contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.center
         
         let style = ControlStyle.contentHorizontalAlignment(contentHorizontalAlignment)
 

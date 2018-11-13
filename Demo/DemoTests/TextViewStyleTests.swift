@@ -105,26 +105,26 @@ class TextViewStyleTests: XCTestCase {
     
     func testTypingAttributes() {
         let color = UIColor.blue
-        let typingAttributes = [NSAttributedStringKey.foregroundColor.rawValue: color]
+        let typingAttributes = [NSAttributedString.Key.foregroundColor.rawValue: color]
         
         let style = TextViewStyle.typingAttributes(typingAttributes)
 
         textView.setStyle(style)
         
-        let returnColor = textView.typingAttributes[NSAttributedStringKey.foregroundColor.rawValue] as? UIColor
+        let returnColor = textView.typingAttributes[NSAttributedString.Key.foregroundColor] as? UIColor
         
         XCTAssertEqual(returnColor, color)
     }
     
     func testLinkTextAttributes() {
         let color = UIColor.blue
-        let linkTextAttributes = [NSAttributedStringKey.foregroundColor.rawValue: color]
+        let linkTextAttributes = [NSAttributedString.Key.foregroundColor.rawValue: color]
         
         let style = TextViewStyle.linkTextAttributes(linkTextAttributes)
 
         textView.setStyle(style)
         
-        let returnColor = textView.linkTextAttributes[NSAttributedStringKey.foregroundColor.rawValue] as? UIColor
+        let returnColor = textView.linkTextAttributes[NSAttributedString.Key.foregroundColor] as? UIColor
         
         XCTAssertEqual(returnColor, color)
     }

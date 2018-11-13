@@ -16,28 +16,28 @@ public struct ButtonStyle: StyleProtocol, ControlStyleCompatability, ViewStyleCo
     }
     
     // MARK: UIButton methods
-    public static func title(_ value: String, _ state: UIControlState) -> ButtonStyle {
+    public static func title(_ value: String, _ state: UIControl.State) -> ButtonStyle {
         return ButtonStyle(style: { button in
             button.setTitle(value, for: state)
             return button
         })
     }
     
-    public static func attributedTitle(_ value: NSAttributedString, _ state: UIControlState) -> ButtonStyle {
+    public static func attributedTitle(_ value: NSAttributedString, _ state: UIControl.State) -> ButtonStyle {
         return ButtonStyle(style: { button in
             button.setAttributedTitle(value, for: state)
             return button
         })
     }
     
-    public static func titleColor(_ value: UIColor, _ state: UIControlState) -> ButtonStyle {
+    public static func titleColor(_ value: UIColor, _ state: UIControl.State) -> ButtonStyle {
         return ButtonStyle(style: { button in
             button.setTitleColor(value, for: state)
             return button
         })
     }
     
-    public static func titleShadowColor(_ value: UIColor, _ state: UIControlState) -> ButtonStyle {
+    public static func titleShadowColor(_ value: UIColor, _ state: UIControl.State) -> ButtonStyle {
         return ButtonStyle(style: { button in
             button.setTitleShadowColor(value, for: state)
             return button
@@ -72,14 +72,14 @@ public struct ButtonStyle: StyleProtocol, ControlStyleCompatability, ViewStyleCo
         })
     }
     
-    public static func backgroundImage(_ value: UIImage, _ state: UIControlState) -> ButtonStyle {
+    public static func backgroundImage(_ value: UIImage?, _ state: UIControl.State) -> ButtonStyle {
         return ButtonStyle(style: { button in
             button.setBackgroundImage(value, for: state)
             return button
         })
     }
     
-    public static func image(_ value: UIImage, _ state: UIControlState) -> ButtonStyle {
+    public static func image(_ value: UIImage?, _ state: UIControl.State) -> ButtonStyle {
         return ButtonStyle(style: { button in
             button.setImage(value, for: state)
             return button

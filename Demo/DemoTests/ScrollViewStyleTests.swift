@@ -53,7 +53,7 @@ class ScrollViewStyleTests: XCTestCase {
     }
     
     func testContentInsetAdjustmentBehavior() {
-        let contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentBehavior.always
+        let contentInsetAdjustmentBehavior = UIScrollView.ContentInsetAdjustmentBehavior.always
         
         let style = ScrollViewStyle.contentInsetAdjustmentBehavior(contentInsetAdjustmentBehavior)
         
@@ -133,7 +133,7 @@ class ScrollViewStyleTests: XCTestCase {
     }
     
     func testDecelerationRate() {
-        let decelerationRate: CGFloat =  UIScrollViewDecelerationRateFast
+        let decelerationRate =  UIScrollView.DecelerationRate.fast
         
         let style = ScrollViewStyle.decelerationRate(decelerationRate)
         
@@ -143,7 +143,7 @@ class ScrollViewStyleTests: XCTestCase {
     }
     
     func testIndicatorStyle() {
-        let indicatorStyle = UIScrollViewIndicatorStyle.black
+        let indicatorStyle = UIScrollView.IndicatorStyle.black
         
         let style = ScrollViewStyle.indicatorStyle(indicatorStyle)
         
@@ -243,7 +243,7 @@ class ScrollViewStyleTests: XCTestCase {
     }
     
     func testKeyboardDismissMode() {
-        let keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
+        let keyboardDismissMode = UIScrollView.KeyboardDismissMode.onDrag
         
         let style = ScrollViewStyle.keyboardDismissMode(keyboardDismissMode)
         
@@ -253,7 +253,7 @@ class ScrollViewStyleTests: XCTestCase {
     }
     
     func testIndexDisplayMode() {
-        let indexDisplayMode = UIScrollViewIndexDisplayMode.alwaysHidden
+        let indexDisplayMode = UIScrollView.IndexDisplayMode.alwaysHidden
         
         let style = ScrollViewStyle.indexDisplayMode(indexDisplayMode)
         

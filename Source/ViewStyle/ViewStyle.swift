@@ -43,7 +43,7 @@ extension ViewStyleCompatability where Self: StyleProtocol, Self.ViewType: UIVie
         })
     }
     
-    public static func tintAdjustmentMode(_ value:  UIViewTintAdjustmentMode) -> Self {
+    public static func tintAdjustmentMode(_ value:  UIView.TintAdjustmentMode) -> Self {
         return Self.init(style: { view in
             view.tintAdjustmentMode = value
             return view

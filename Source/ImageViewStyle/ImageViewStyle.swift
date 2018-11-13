@@ -18,14 +18,14 @@ public struct ImageViewStyle: StyleProtocol, ViewStyleCompatability {
     
     // MARK: ImageView
     
-    public static func image(_ value: UIImage) -> ImageViewStyle {
+    public static func image(_ value: UIImage?) -> ImageViewStyle {
         return ImageViewStyle( style: { imageView in
             imageView.image = value
             return imageView
         })
     }
     
-    public static func highlightedImage(_ value: UIImage) -> ImageViewStyle {
+    public static func highlightedImage(_ value: UIImage?) -> ImageViewStyle {
         return ImageViewStyle( style: { imageView in
             imageView.highlightedImage = value
             return imageView

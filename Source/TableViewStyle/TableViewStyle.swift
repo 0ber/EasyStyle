@@ -24,7 +24,7 @@ public struct TableViewStyle: StyleProtocol, ViewStyleCompatability, ScrollViewS
         })
     }
     
-    public static func separatorStyle(_ value: UITableViewCellSeparatorStyle) -> TableViewStyle {
+    public static func separatorStyle(_ value: UITableViewCell.SeparatorStyle) -> TableViewStyle {
         return  TableViewStyle(style: { tableView in
             tableView.separatorStyle = value
             return tableView
@@ -60,7 +60,7 @@ public struct TableViewStyle: StyleProtocol, ViewStyleCompatability, ScrollViewS
     }
     
     @available(iOS 11.0, *)
-    public static func separatorInsetReference(_ value: UITableViewSeparatorInsetReference) -> TableViewStyle {
+    public static func separatorInsetReference(_ value: UITableView.SeparatorInsetReference) -> TableViewStyle {
         return  TableViewStyle(style: { tableView in
             tableView.separatorInsetReference = value
             return tableView
