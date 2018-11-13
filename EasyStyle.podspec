@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.author           = 'Alex Kalinkin'
     s.social_media_url = 'https://twitter.com/KalinkinAleksey'
     s.source           = { :git => 'https://github.com/0ber/EasyStyle.git', :tag => s.version.to_s }
-    s.swift_version    = '4.0'
+    s.swift_version    = '4.2'
 
     s.ios.deployment_target = '10.0'
 
