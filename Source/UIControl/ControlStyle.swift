@@ -6,7 +6,13 @@ extension UIControl {
     }
 }
 
-public protocol ControlStyleCompatability  { }
+public protocol ControlStyleCompatability  {
+    static func isEnabled(_ value: Bool) -> Self
+    static func isSelected(_ value: Bool) -> Self
+    static func isHighlighted(_ value: Bool) -> Self
+    static func contentVerticalAlignment(_ value: UIControl.ContentVerticalAlignment) -> Self
+    static func contentHorizontalAlignment(_ value: UIControl.ContentHorizontalAlignment) -> Self
+}
 
 public struct ControlStyle: StyleProtocol, ControlStyleCompatability, ViewStyleCompatability {
     
