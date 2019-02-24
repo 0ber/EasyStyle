@@ -50,7 +50,7 @@ class ViewStyleTests: XCTestCase {
     }
     
     func testtintAdjustmentMode() {
-        let tintAdjustmentMode = UIViewTintAdjustmentMode.dimmed
+        let tintAdjustmentMode = UIView.TintAdjustmentMode.dimmed
         
         let style = ViewStyle.tintAdjustmentMode(tintAdjustmentMode)
 

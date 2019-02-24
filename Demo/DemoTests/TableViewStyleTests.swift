@@ -33,7 +33,7 @@ class TableViewStyleTests: XCTestCase {
     }
     
     func testSeparatorStyle() {
-        let separatorStyle = UITableViewCellSeparatorStyle.singleLine
+        let separatorStyle = UITableViewCell.SeparatorStyle.singleLine
         
         let style = TableViewStyle.separatorStyle(separatorStyle)
         
@@ -84,7 +84,7 @@ class TableViewStyleTests: XCTestCase {
     }
     
     func testSeparatorInsetReference() {
-        let separatorInsetReference = UITableViewSeparatorInsetReference.fromAutomaticInsets
+        let separatorInsetReference = UITableView.SeparatorInsetReference.fromAutomaticInsets
         
         let style = TableViewStyle.separatorInsetReference(separatorInsetReference)
         

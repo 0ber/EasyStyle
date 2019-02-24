@@ -74,16 +74,16 @@ public struct TextViewStyle: StyleProtocol, ViewStyleCompatability, ScrollViewSt
         })
     }
     
-    public static func typingAttributes(_ value: [String: Any]) -> TextViewStyle {
+    public static func typingAttributes(_ value: [String : Any]) -> TextViewStyle {
         return TextViewStyle(style: { textView in
-            textView.typingAttributes = value
+            textView.typingAttributes = convertToNSAttributedStringKeyDictionary(value)
             return textView
         })
     }
     
-    public static func linkTextAttributes(_ value: [String: Any]) -> TextViewStyle {
+    public static func linkTextAttributes(_ value: [String : Any]) -> TextViewStyle {
         return TextViewStyle(style: { textView in
-            textView.linkTextAttributes = value
+            textView.linkTextAttributes = convertToOptionalNSAttributedStringKeyDictionary(value)
             return textView
         })
     }
@@ -129,4 +129,15 @@ public struct TextViewStyle: StyleProtocol, ViewStyleCompatability, ScrollViewSt
             return textView
         })
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToNSAttributedStringKeyDictionary(_ input: [String: Any]) -> [NSAttributedString.Key: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
 }

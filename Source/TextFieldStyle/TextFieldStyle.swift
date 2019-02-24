@@ -45,9 +45,9 @@ public struct TextFieldStyle: StyleProtocol, ControlStyleCompatability, ViewStyl
         })
     }
     
-    public static func defaultTextAttributes(_ value: [String: Any])  -> TextFieldStyle {
+    public static func defaultTextAttributes(_ value: [NSAttributedString.Key: Any])  -> TextFieldStyle {
         return TextFieldStyle(style: { textField in
-            textField.defaultTextAttributes = value
+            textField.defaultTextAttributes = value 
             return textField
         })
     }
@@ -108,7 +108,7 @@ public struct TextFieldStyle: StyleProtocol, ControlStyleCompatability, ViewStyl
         })
     }
     
-    public static func borderStyle(_ value: UITextBorderStyle)  -> TextFieldStyle {
+    public static func borderStyle(_ value: UITextField.BorderStyle)  -> TextFieldStyle {
         return TextFieldStyle(style: { textField in
             textField.borderStyle = value
             return textField
@@ -129,7 +129,7 @@ public struct TextFieldStyle: StyleProtocol, ControlStyleCompatability, ViewStyl
         })
     }
     
-    public static func clearButtonMode(_ value: UITextFieldViewMode)  -> TextFieldStyle {
+    public static func clearButtonMode(_ value: UITextField.ViewMode)  -> TextFieldStyle {
         return TextFieldStyle(style: { textField in
             textField.clearButtonMode = value
             return textField
@@ -143,7 +143,7 @@ public struct TextFieldStyle: StyleProtocol, ControlStyleCompatability, ViewStyl
         })
     }
     
-    public static func leftViewMode(_ value: UITextFieldViewMode)  -> TextFieldStyle {
+    public static func leftViewMode(_ value: UITextField.ViewMode)  -> TextFieldStyle {
         return TextFieldStyle(style: { textField in
             textField.leftViewMode = value
             return textField
@@ -157,7 +157,7 @@ public struct TextFieldStyle: StyleProtocol, ControlStyleCompatability, ViewStyl
         })
     }
     
-    public static func rightViewMode(_ value: UITextFieldViewMode)  -> TextFieldStyle {
+    public static func rightViewMode(_ value: UITextField.ViewMode)  -> TextFieldStyle {
         return TextFieldStyle(style: { textField in
             textField.rightViewMode = value
             return textField
@@ -177,4 +177,27 @@ public struct TextFieldStyle: StyleProtocol, ControlStyleCompatability, ViewStyl
             return textField
         })
     }
+    
+    public static func keyboardType(_ value: UIKeyboardType)  -> TextFieldStyle {
+        return TextFieldStyle(style: { textField in
+            textField.keyboardType = value
+            return textField
+        })
+    }
+    
+    public static func autocapitalizationType(_ value: UITextAutocapitalizationType)  -> TextFieldStyle {
+        return TextFieldStyle(style: { textField in
+            textField.autocapitalizationType = value
+            return textField
+        })
+    }
+    
+    public static func autocorrectionType(_ value: UITextAutocorrectionType)  -> TextFieldStyle {
+        return TextFieldStyle(style: { textField in
+            textField.autocorrectionType = value
+            return textField
+        })
+    }
 }
+
+
