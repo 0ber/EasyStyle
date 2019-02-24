@@ -62,7 +62,6 @@ extension ButtonStyle {
     // create style
     static let logIn = blueButton + title("Login", .normal)
     static let logOut = redButton + title("Logout", .normal)
-
 }
 
 // MARK: Label Style
