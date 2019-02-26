@@ -9,7 +9,7 @@ extension UIScrollView {
 public protocol ScrollViewStyleCompatability  {
     static func contentSize(_ value: CGSize) -> Self
     static func contentOffset(_ value: CGPoint, animated: Bool) -> Self
-    static func contentInsetAdjustmentBehavior(_ value: UIScrollView.ContentInsetAdjustmentBehavior) -> Self
+//    static func contentInsetAdjustmentBehavior(_ value: UIScrollView.ContentInsetAdjustmentBehavior) -> Self
     static func isScrollEnabled(_ value: Bool) -> Self
     static func isDirectionalLockEnabled(_ value: Bool) -> Self
     static func isPagingEnabled(_ value: Bool) -> Self
@@ -69,13 +69,13 @@ extension ScrollViewStyleCompatability where Self: StyleProtocol, Self.ViewType:
         })
     }
     
-    @available(iOS 11.0, *)
-    public static func contentInsetAdjustmentBehavior(_ value: UIScrollView.ContentInsetAdjustmentBehavior) -> Self {
-        return Self.init(style:  { scrollView in
-            scrollView.contentInsetAdjustmentBehavior = value
-            return scrollView
-        })
-    }
+//    @available(iOS 11.0, *)
+//    public static func contentInsetAdjustmentBehavior(_ value: UIScrollView.ContentInsetAdjustmentBehavior) -> Self {
+//        return Self.init(style:  { scrollView in
+//            scrollView.contentInsetAdjustmentBehavior = value
+//            return scrollView
+//        })
+//    }
     
     public static func isScrollEnabled(_ value: Bool) -> Self {
         return Self.init(style:  { scrollView in

@@ -52,15 +52,15 @@ class ScrollViewStyleTests: XCTestCase {
         XCTAssertEqual(scrollView.contentInset, contentInset)
     }
     
-    func testContentInsetAdjustmentBehavior() {
-        let contentInsetAdjustmentBehavior = UIScrollView.ContentInsetAdjustmentBehavior.always
-        
-        let style = ScrollViewStyle.contentInsetAdjustmentBehavior(contentInsetAdjustmentBehavior)
-        
-        scrollView.setStyle(style)
-        
-        XCTAssertEqual(scrollView.contentInsetAdjustmentBehavior, contentInsetAdjustmentBehavior)
-    }
+//    func testContentInsetAdjustmentBehavior() {
+//        let contentInsetAdjustmentBehavior = UIScrollView.ContentInsetAdjustmentBehavior.always
+//
+//        let style = ScrollViewStyle.contentInsetAdjustmentBehavior(contentInsetAdjustmentBehavior)
+//
+//        scrollView.setStyle(style)
+//
+//        XCTAssertEqual(scrollView.contentInsetAdjustmentBehavior, contentInsetAdjustmentBehavior)
+//    }
     
     func testIsScrollEnabled() {
         let isScrollEnabled = false
