@@ -21,7 +21,7 @@ public protocol ViewStyleCompatability  {
 
     static func masksToBounds(_ value: Bool) -> Self
     static func cornerRadius(_ value: CGFloat) -> Self
-    static func maskedCorners(_ value: CACornerMask) -> Self
+
     static func borderWidth(_ value: CGFloat) -> Self
     static func borderColor(_ value: UIColor) -> Self
     static func shadowOpacity(_ value: Float) -> Self
@@ -29,6 +29,9 @@ public protocol ViewStyleCompatability  {
     static func layerShadowOffset(_ value: CGSize) -> Self
     static func layerShadowColor(_ value: UIColor) -> Self
     static func shadowPath(_ value: CGPath) -> Self
+    
+    @available(iOS 11.0, *)
+    static func maskedCorners(_ value: CACornerMask) -> Self
 }
 
 public struct ViewStyle: StyleProtocol, ViewStyleCompatability {

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'EasyStyle'
-    s.version          = '0.0.4'
+    s.version          = '0.0.5'
     s.summary          = 'Easy maintain styles in project'
     s.description      = 'A powerful tool for maintain styles in project'
     s.homepage         = 'https://github.com/0ber/EasyStyle'
