@@ -137,13 +137,13 @@ extension ViewStyleCompatability where Self: StyleProtocol, Self.ViewType: UIVie
         })
     }
     
-    @available(iOS 11.0, *)
-    public static func maskedCorners(_ value: CACornerMask) -> Self {
-        return Self.init(style: { view in
-            view.layer.maskedCorners = value
-            return view
-        })
-    }
+//    @available(iOS 11.0, *)
+//    public static func maskedCorners(_ value: CACornerMask) -> Self {
+//        return Self.init(style: { view in
+//            view.layer.maskedCorners = value
+//            return view
+//        })
+//    }
     
     public static func borderWidth(_ value: CGFloat) -> Self {
         return Self.init(style: { view in
