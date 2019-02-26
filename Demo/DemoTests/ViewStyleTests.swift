@@ -149,15 +149,15 @@ class ViewStyleTests: XCTestCase {
         XCTAssertEqual(view.layer.cornerRadius, cornerRadius)
     }
     
-    func testMaskedCorners() {
-        let maskedCorners = CACornerMask.layerMaxXMinYCorner
-        
-        let style = ViewStyle.maskedCorners(maskedCorners)
-
-        view.setStyle(style)
-        
-        XCTAssertEqual(view.layer.maskedCorners, maskedCorners)
-    }
+//    func testMaskedCorners() {
+//        let maskedCorners = CACornerMask.layerMaxXMinYCorner
+//        
+//        let style = ViewStyle.maskedCorners(maskedCorners)
+//
+//        view.setStyle(style)
+//        
+//        XCTAssertEqual(view.layer.maskedCorners, maskedCorners)
+//    }
     
     func testBorderWidth() {
         let borderWidth: CGFloat = 4
